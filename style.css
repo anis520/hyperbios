@@ -1,0 +1,2109 @@
+body {
+  background-color: #f1f1f1;
+  font-family: sans-serif;
+}
+a {
+  color: currentColor;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.mainWraper {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0;
+}
+
+.header .logoDiv {
+  width: 28%;
+}
+.header .searchDiv {
+  width: 35%;
+  position: relative;
+}
+.header .contactDiv {
+  width: 37%;
+}
+.header .logoDiv a img {
+  display: block;
+  margin: auto;
+}
+.header .logoDiv p {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.377);
+  font-weight: 600;
+}
+
+.searchDiv input {
+  padding: 17px 100px 17px 30px;
+  width: 100%;
+  font-size: 15px;
+  color: rgba(75, 74, 74, 0.63);
+
+  border: 2px solid #f17236;
+  outline: none;
+  border-radius: 5px;
+}
+.searchDiv i {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  font-size: 17px;
+}
+.searchDiv input::placeholder {
+  color: rgba(75, 74, 74, 0.397);
+  font-size: 15px;
+}
+
+/* contactDiv  */
+.contactDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.contactDiv div {
+  text-align: center;
+  /* width: 33%; */
+}
+.contactDiv .navbtn i {
+  visibility: hidden;
+  font-size: 25px;
+  color: #000000;
+  margin-bottom: 14px;
+}
+.contactDiv div i {
+  font-size: 25px;
+  color: #73b43e;
+  margin-bottom: 14px;
+}
+
+.contactDiv div p {
+  color: #232323bd;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+.contactDiv div .number {
+  /* letter-spacing: 5px; */
+}
+
+/* navbar  */
+.mainWraper .navbar {
+  width: 100%;
+  margin-top: 25px;
+}
+.mainWraper .navbar .menutitle {
+  visibility: hidden;
+}
+
+.mainWraper .navbar ul {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+}
+.mainWraper .navbar ul li {
+  background: #73b43e;
+  width: 257px;
+  height: 100%;
+  padding: 0 12px;
+  line-height: 44px;
+  position: relative;
+}
+.mainWraper .navbar ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.mainWraper .navbar ul li:first-child {
+  background: #f17236;
+  width: 290px;
+  height: 100%;
+  padding: 0 12px;
+  line-height: 44px;
+  border-radius: 7px 0 0 7px;
+}
+.mainWraper .navbar ul li:last-child {
+  background: #f17236;
+  width: 150px;
+  height: 100%;
+  padding: 0 12px;
+  line-height: 44px;
+  border-radius: 0 7px 7px 0;
+  margin-left: 10px;
+}
+
+.mainWraper .navbar ul li::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.418);
+  width: 2px;
+  height: 20px;
+  top: 11px;
+  left: 0;
+  border-radius: 5px;
+}
+.mainWraper .navbar ul li:last-child::before {
+  content: "";
+  position: absolute;
+  background-color: #f17236;
+  width: 2px;
+  height: 20px;
+  top: 11px;
+  left: 0;
+  border-radius: 5px;
+}
+.mainWraper .navbar ul li:first-child::before {
+  content: "";
+  position: absolute;
+  background-color: #f17236;
+  width: 2px;
+  height: 20px;
+  top: 11px;
+  left: 0;
+  border-radius: 5px;
+}
+
+.mainWraper .navbar ul .blog1 {
+  overflow: hidden;
+  padding: 0 0 0 80px;
+}
+.mainWraper .navbar ul li:hover {
+  background: #f17236;
+}
+.mainWraper .navbar ul .blog1 div {
+  position: absolute;
+  transition: 0.1s;
+  top: -15px;
+  left: -47px;
+  width: 119px;
+  height: 82px;
+  transform: rotate(59deg);
+  background: #f17236;
+}
+
+/* slider */
+.slider div img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* subnav  */
+
+.subnav {
+  background-color: #73b43e;
+  padding: 10px;
+  color: white;
+  display: flex;
+  box-shadow: 0px 3px 8px rgba(66, 66, 68, 0.404);
+}
+
+.subnav div {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  gap: 25px;
+}
+
+.subnav div i {
+  font-size: 25px;
+}
+
+/* sur  */
+
+.sur .textSur h1 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 40px;
+  padding: 15px 0;
+}
+.sur h1 span {
+  font-weight: 600;
+  text-align: center;
+  font-size: 40px;
+  margin: 10px 0 20px 0;
+  color: #975ba6;
+}
+.sur .textSur {
+  position: relative;
+}
+.sur .textSur .surBg {
+  height: 100%;
+  width: 100%;
+  background-image: url("./Image/montagne-nature.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 550px;
+  opacity: 0.14;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sur .textSur .wraper {
+  max-width: 1320px;
+  margin: auto;
+}
+.sur .textSur .wraper div {
+  display: flex;
+  gap: 20px;
+}
+.sur .textSur .wraper div p {
+  font-size: 18px;
+  word-spacing: 8px;
+  line-height: 33px;
+  width: 50%;
+  text-align: start;
+}
+.sur .textSur .wraper .number {
+  color: #975ba6;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px 0;
+}
+.sur .textSur .wraper .text {
+  line-height: 30px;
+  font-size: 18px;
+  padding-top: 30px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.sur .textSur .wraper div p span {
+  color: #f17236;
+}
+.sur .textSur .wraper div p span:hover {
+  cursor: pointer;
+  color: #975ba6;
+}
+
+/* univers */
+.mainWraper .univers {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.mainWraper h2 {
+  color: #73b43e;
+  font-size: 37px;
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+.mainWraper .univers div {
+  width: 25%;
+}
+.mainWraper .univers .topMargin {
+  margin-top: 20px;
+}
+.mainWraper .univers div img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #73b43e;
+}
+
+/* Nouveautés */
+.Nouveautés {
+  position: relative;
+  z-index: 1122%;
+}
+.Nouveautés .productBg {
+  background-color: #89459b;
+  position: absolute;
+  top: 240px;
+  left: 0;
+  height: 350px;
+  width: 100%;
+  z-index: 111%;
+}
+
+.Nouveautés .mainWraper .product {
+  position: absolute;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  /* gap: 40px; */
+  position: relative;
+}
+
+.Nouveautés .mainWraper .product .rightarrow {
+  position: absolute;
+  right: -10px;
+  border: none;
+  top: 50%;
+  font-size: 18px;
+  background-color: transparent;
+}
+.Nouveautés .mainWraper .product .leftarrow {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  border: none;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.Nouveautés .mainWraper .product .div img {
+  width: 95%;
+  margin: auto;
+  display: block;
+}
+.Nouveautés .mainWraper .product .div img:hover {
+  cursor: pointer;
+}
+.Nouveautés .mainWraper .product .div {
+  width: 19%;
+  padding: 10px 0 30px 0;
+  box-shadow: 0 0 5px #975ba691;
+  transition: 0.7s;
+  background-color: white;
+}
+.Nouveautés .mainWraper .product .div:hover {
+  width: 19%;
+  padding: 0;
+  box-shadow: 0 0 4px #975ba6;
+}
+.Nouveautés .mainWraper .product .div p {
+  font-size: 14px;
+  padding: 10px;
+  color: #232323bd;
+  font-weight: 600;
+}
+.Nouveautés .mainWraper .product .div div {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.Nouveautés .mainWraper .product .div div span {
+  color: #73b43e;
+  font-weight: 600;
+}
+.Nouveautés .mainWraper .product .div div button {
+  color: white;
+  background-color: #73b43e;
+  border: none;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}
+
+.Nouveautés .productBg .tourBtn {
+  background-color: #f17236;
+  color: white;
+  display: block;
+  margin: 20px auto;
+  border: none;
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 260px;
+}
+
+/* Produits */
+.Produits {
+  position: relative;
+  z-index: 1122%;
+  margin-top: 150px;
+}
+.productBg {
+  background-color: #89459b;
+  position: absolute;
+  top: 240px;
+  left: 0;
+  height: 350px;
+  width: 100%;
+  z-index: 111%;
+}
+
+.Produits .mainWraper .product {
+  position: absolute;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  /* gap: 40px; */
+  position: relative;
+}
+
+.Produits .mainWraper .product .rightarrow {
+  position: absolute;
+  right: -10px;
+  border: none;
+  top: 50%;
+  font-size: 18px;
+  background-color: transparent;
+}
+.Produits .mainWraper .product .leftarrow {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  border: none;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.Produits .mainWraper .product .div img {
+  width: 95%;
+  margin: auto;
+  display: block;
+}
+.Produits .mainWraper .product .div img:hover {
+  cursor: pointer;
+}
+.Produits .mainWraper .product .div {
+  width: 19%;
+  padding: 10px 0 30px 0;
+  box-shadow: 0 0 5px #975ba691;
+  transition: 0.7s;
+  background-color: white;
+}
+.Produits .mainWraper .product .div:hover {
+  width: 19%;
+  padding: 0;
+  box-shadow: 0 0 4px #975ba6;
+}
+.Produits .mainWraper .product .div p {
+  font-size: 14px;
+  padding: 10px;
+  color: #232323bd;
+  font-weight: 600;
+}
+.Produits .mainWraper .product .div div {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.Produits .mainWraper .product .div div span {
+  color: #73b43e;
+  font-weight: 600;
+}
+.Produits .mainWraper .product .div div button {
+  color: white;
+  background-color: #73b43e;
+  border: none;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}
+
+.Produits .mainWraper .tourBtn {
+  background-color: #f17236;
+  color: white;
+  display: block;
+  margin: 20px auto;
+  border: none;
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/* Meilleures */
+.Meilleures {
+  position: relative;
+  z-index: 1122%;
+  margin-top: 150px;
+}
+.Meilleures .productBg {
+  background-color: #73b43e;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  height: 350px;
+  width: 100%;
+  z-index: 111%;
+}
+
+.Meilleures .mainWraper .product {
+  position: absolute;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  /* gap: 40px; */
+  position: relative;
+}
+
+.Meilleures .mainWraper .product .rightarrow {
+  position: absolute;
+  right: -10px;
+  border: none;
+  top: 50%;
+  font-size: 18px;
+  background-color: transparent;
+}
+.Meilleures .mainWraper .product .leftarrow {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  border: none;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.Meilleures .mainWraper .product .div img {
+  width: 95%;
+  margin: auto;
+  display: block;
+}
+.Meilleures .mainWraper .product .div img:hover {
+  cursor: pointer;
+}
+.Meilleures .mainWraper .product .div {
+  width: 19%;
+  padding: 10px 0 30px 0;
+  box-shadow: 0 0 5px #975ba691;
+  transition: 0.7s;
+  background-color: white;
+}
+.Meilleures .mainWraper .product .div:hover {
+  width: 19%;
+  padding: 0;
+  box-shadow: 0 0 4px #975ba6;
+}
+.Meilleures .mainWraper .product .div p {
+  font-size: 14px;
+  padding: 10px;
+  color: #232323bd;
+  font-weight: 600;
+}
+.Meilleures .mainWraper .product .div div {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.Meilleures .mainWraper .product .div div span {
+  color: #73b43e;
+  font-weight: 600;
+}
+.Meilleures .mainWraper .product .div div button {
+  color: white;
+  background-color: #73b43e;
+  border: none;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}
+
+.Meilleures .mainWraper .tourBtn {
+  background-color: #f17236;
+  color: white;
+  display: block;
+  margin: 20px auto;
+  border: none;
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/* conseils */
+.conseils {
+  background-color: white;
+  padding: 20px 0;
+}
+
+.conseils .mainWraper h1 {
+  color: #f17236;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.conseils .mainWraper .conseilsDiv {
+  display: flex;
+  width: 95%;
+
+  gap: 20px;
+  margin: auto;
+}
+.conseils .mainWraper .conseilsDiv .single {
+  width: 35%;
+  height: fit-content;
+  transition: 3s;
+}
+.conseils .mainWraper .conseilsDiv .single .img {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+.conseils .mainWraper .conseilsDiv .single .img img {
+  transition: 5s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.conseils .mainWraper .conseilsDiv .single:hover {
+  box-shadow: 0 0 8px rgb(66, 64, 64);
+}
+.conseils .mainWraper .conseilsDiv .single:hover .img img {
+  transform: rotate(-10deg) scale(1.4);
+  filter: grayscale(60%);
+  cursor: pointer;
+}
+.conseils .mainWraper .conseilsDiv .single .contain {
+  width: 100%;
+  border: 1px solid rgba(204, 198, 198, 0.404);
+  background-color: white;
+  padding: 20px;
+}
+.conseils .mainWraper .conseilsDiv .single .contain .title {
+  font-size: 16px;
+  color: #77778d;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.conseils .mainWraper .conseilsDiv .single .contain .subtitle {
+  font-size: 10px;
+  color: #77778d86;
+  font-weight: bold;
+  padding-top: 10px;
+  line-height: 22px;
+}
+.conseils .mainWraper .conseilsDiv .single .contain .subtitle span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.conseils .mainWraper .conseilsDiv .single .contain .icon {
+  display: flex;
+  gap: 10px;
+  color: #ffa500;
+  font-size: 10px;
+  padding: 10px 0;
+}
+.conseils .mainWraper .conseilsDiv .single .contain .bodytext {
+  font-size: 15px;
+  color: #77778d;
+}
+.conseils .mainWraper .conseilsDiv .single .button {
+  background: #98b853;
+  display: flex;
+  color: rgb(248, 241, 241);
+  height: 40px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 0;
+}
+.conseils .mainWraper .conseilsDiv .single .button a {
+  display: flex;
+  gap: 5px;
+  padding: 0 20px;
+  height: 100%;
+  align-items: center;
+  transition: 1s;
+}
+.conseils .mainWraper .conseilsDiv .single .button a:hover {
+  background-color: #0785a0;
+}
+.conseils .mainWraper .conseilsDiv .single .button p i {
+  margin-right: 5px;
+}
+.conseils .mainWraper button {
+  background-color: #73b43e;
+  color: white;
+  padding: 10px 20px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 40px auto;
+  transition: 0.3s;
+}
+.conseils .mainWraper button:hover {
+  background-color: #98b580;
+}
+
+@media (max-width: 1115px) {
+  .mainWraper {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+
+  .header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .header .logoDiv {
+    width: 25%;
+  }
+  .header .searchDiv {
+    width: 100%;
+    margin-left: 15px;
+
+    position: relative;
+  }
+  .header .contactDiv {
+    width: 40%;
+  }
+  .header .logoDiv a img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    margin: 50px 0 0 20px;
+  }
+  .header .logoDiv p {
+    opacity: 0;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.377);
+    font-weight: 600;
+  }
+
+  .searchDiv input {
+    padding: 17px 100px 17px 30px;
+    width: 100%;
+    font-size: 15px;
+    color: rgba(75, 74, 74, 0.63);
+
+    border: 3px solid #f17236;
+    outline: none;
+    border-radius: 0px;
+  }
+  .searchDiv i {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 17px;
+  }
+  .searchDiv input::placeholder {
+    color: rgba(75, 74, 74, 0.397);
+    font-size: 15px;
+  }
+
+  /* contactDiv  */
+  .contactDiv {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    margin-right: 25px;
+  }
+  .contactDiv div {
+    text-align: center;
+
+    /* width: 33%; */
+  }
+  .contactDiv div:first-child {
+    visibility: hidden;
+  }
+
+  .contactDiv div i {
+    font-size: 25px;
+    color: #73b43e;
+    margin-bottom: 14px;
+  }
+  .contactDiv .navbtn i {
+    visibility: visible;
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 14px;
+  }
+
+  .contactDiv div p {
+    color: #232323bd;
+
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /* navbar  */
+  .mainWraper .navbar {
+    visibility: hidden;
+    width: 100%;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+    background-color: #00000067;
+    z-index: 11111;
+  }
+  .mainWraper .navbar .menutitle {
+    visibility: hidden;
+    background-color: white;
+    width: 25%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mainWraper .navbar .menutitle button {
+    border: none;
+    color: black;
+    font-size: 18px;
+  }
+  .mainWraper .navbar ul {
+    width: 25%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    background-color: white;
+  }
+  .mainWraper .navbar ul li {
+    background: #73b43e;
+    width: auto;
+    height: auto;
+    padding: 0 12px;
+    line-height: 44px;
+    position: relative;
+  }
+  .mainWraper .navbar ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 4px;
+    padding: 10px;
+  }
+  .mainWraper .navbar ul li:first-child {
+    background: #f17236;
+    width: auto;
+    height: auto;
+    padding: 0 12px;
+    line-height: 44px;
+    border-radius: 0px 0 0 0px;
+  }
+  .mainWraper .navbar ul li:last-child {
+    background: #f17236;
+    width: auto;
+    height: auto;
+    padding: 0 12px;
+    line-height: 44px;
+    border-radius: 0 0px 0px 0;
+    margin-left: 0px;
+  }
+
+  .mainWraper .navbar ul li::before {
+    content: "";
+    position: absolute;
+    background-color: #f17236;
+    width: 0px;
+    height: 0px;
+    top: 11px;
+    left: 0;
+    border-radius: 5px;
+  }
+  .mainWraper .navbar ul li:last-child::before {
+    content: "";
+    position: absolute;
+    background-color: #f17236;
+    width: 0px;
+    height: 0px;
+    top: 11px;
+    left: 0;
+    border-radius: 5px;
+  }
+  .mainWraper .navbar ul li:first-child::before {
+    content: "";
+    position: absolute;
+    background-color: #f17236;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+    left: 0;
+    border-radius: 5px;
+  }
+
+  .mainWraper .navbar ul .blog1 {
+    overflow: hidden;
+    padding: 0 10px;
+  }
+  .mainWraper .navbar ul li:hover {
+    background: #f17236;
+  }
+  .mainWraper .navbar ul .blog1 div {
+    position: absolute;
+    transition: 0.1s;
+    top: -15px;
+    left: -47px;
+    width: 119px;
+    height: 82px;
+    transform: rotate(59deg);
+    background: #f17236;
+    visibility: hidden;
+  }
+
+  /* slider */
+  .slider div img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  /* subnav  */
+
+  .subnav {
+    background-color: #73b43e;
+    padding: 10px;
+    color: white;
+    display: flex;
+    box-shadow: 0px 3px 8px rgba(66, 66, 68, 0.404);
+  }
+
+  .subnav div {
+    display: flex;
+    font-size: 12px;
+
+    font-weight: 500;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    line-height: 22px;
+  }
+
+  .subnav div i {
+    font-size: 25px;
+  }
+  .subnav div p {
+    text-align: center;
+  }
+
+  /* sur  */
+
+  .sur .textSur {
+    padding: 30px;
+  }
+  .sur .textSur h1 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 40px;
+    padding: 15px 0;
+  }
+  .sur h1 span {
+    font-weight: 600;
+    text-align: center;
+    font-size: 40px;
+    margin: 10px 0 20px 0;
+    color: #975ba6;
+  }
+  .sur .textSur {
+    position: relative;
+  }
+  .sur .textSur .surBg {
+    height: 100%;
+    width: 100%;
+    background-image: url("./Image/montagne-nature.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 550px;
+    opacity: 0.14;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .sur .textSur .wraper {
+    max-width: 1320px;
+    margin: auto;
+  }
+  .sur .textSur .wraper div {
+    display: flex;
+    gap: 20px;
+  }
+  .sur .textSur .wraper div p {
+    font-size: 14px;
+    word-spacing: 8px;
+    line-height: 33px;
+    width: 50%;
+    text-align: start;
+  }
+  .sur .textSur .wraper .number {
+    color: #975ba6;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .sur .textSur .wraper .text {
+    line-height: 30px;
+    font-size: 18px;
+    padding-top: 30px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+  }
+
+  .sur .textSur .wraper div p span {
+    color: #f17236;
+  }
+  .sur .textSur .wraper div p span:hover {
+    cursor: pointer;
+    color: #975ba6;
+  }
+  /* Nouveautés */
+  .Nouveautés {
+    position: relative;
+    z-index: 1122;
+  }
+  .Nouveautés .productBg {
+    background-color: #89459b;
+    position: absolute;
+    top: 440px;
+    left: 0;
+    height: 350px;
+    width: 100%;
+    z-index: 111%;
+  }
+
+  .Nouveautés .mainWraper .product {
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 40px; */
+    position: relative;
+  }
+  .Nouveautés .mainWraper .product div:nth-child(4) {
+    display: none;
+  }
+  .Nouveautés .mainWraper .product div:nth-child(3) {
+    display: none;
+  }
+  .Nouveautés .mainWraper .product .rightarrow {
+    position: absolute;
+    right: 10px;
+    border: none;
+    top: 50%;
+    font-size: 18px;
+    background-color: transparent;
+  }
+  .Nouveautés .mainWraper .product .leftarrow {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+  }
+
+  .Nouveautés .mainWraper .product .div img {
+    width: 95%;
+    margin: auto;
+    display: block;
+  }
+  .Nouveautés .mainWraper .product .div img:hover {
+    cursor: pointer;
+  }
+  .Nouveautés .mainWraper .product .div {
+    width: 40%;
+    padding: 10px 0 30px 0;
+    box-shadow: 0 0 5px #975ba691;
+    transition: 0.7s;
+    background-color: white;
+  }
+  .Nouveautés .mainWraper .product .div:hover {
+    width: 40%;
+    padding: 0;
+    box-shadow: 0 0 4px #975ba6;
+  }
+  .Nouveautés .mainWraper .product .div p {
+    font-size: 14px;
+    padding: 10px;
+    color: #232323bd;
+    font-weight: 600;
+  }
+  .Nouveautés .mainWraper .product .div div {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Nouveautés .mainWraper .product .div div span {
+    color: #73b43e;
+    font-weight: 600;
+  }
+  .Nouveautés .mainWraper .product .div div button {
+    color: white;
+    background-color: #73b43e;
+    border: none;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+  }
+
+  .Nouveautés .productBg .tourBtn {
+    background-color: #f17236;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 260px;
+  }
+
+  /* Produits */
+  .Produits {
+    position: relative;
+    z-index: 1122%;
+    margin-top: 150px;
+  }
+  .productBg {
+    background-color: #89459b;
+    position: absolute;
+    top: 240px;
+    left: 0;
+    height: 350px;
+    width: 100%;
+    z-index: 111%;
+  }
+
+  .Produits .mainWraper .product {
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 40px; */
+    position: relative;
+  }
+  .Produits .mainWraper .product div:nth-child(4) {
+    display: none;
+  }
+  .Produits .mainWraper .product div:nth-child(3) {
+    display: none;
+  }
+  .Produits .mainWraper .product .rightarrow {
+    position: absolute;
+    right: 10px;
+    border: none;
+    top: 50%;
+    font-size: 18px;
+    background-color: transparent;
+  }
+  .Produits .mainWraper .product .leftarrow {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+  }
+
+  .Produits .mainWraper .product .div img {
+    width: 95%;
+    margin: auto;
+    display: block;
+  }
+  .Produits .mainWraper .product .div img:hover {
+    cursor: pointer;
+  }
+  .Produits .mainWraper .product .div {
+    width: 40%;
+    padding: 10px 0 30px 0;
+    box-shadow: 0 0 5px #975ba691;
+    transition: 0.7s;
+    background-color: white;
+  }
+  .Produits .mainWraper .product .div:hover {
+    width: 40%;
+    padding: 0;
+    box-shadow: 0 0 4px #975ba6;
+  }
+  .Produits .mainWraper .product .div p {
+    font-size: 14px;
+    padding: 10px;
+    color: #232323bd;
+    font-weight: 600;
+  }
+  .Produits .mainWraper .product .div div {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Produits .mainWraper .product .div div span {
+    color: #73b43e;
+    font-weight: 600;
+  }
+  .Produits .mainWraper .product .div div button {
+    color: white;
+    background-color: #73b43e;
+    border: none;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+  }
+
+  .Produits .mainWraper .tourBtn {
+    background-color: #f17236;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+  /* Meilleures */
+  .Meilleures {
+    position: relative;
+    z-index: 1122%;
+    margin-top: 150px;
+  }
+  .Meilleures .productBg {
+    background-color: #73b43e;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    height: 350px;
+    width: 100%;
+    z-index: 111%;
+  }
+
+  .Meilleures .mainWraper .product {
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 40px; */
+    position: relative;
+  }
+  .Meilleures .mainWraper .product div:nth-child(4) {
+    display: none;
+  }
+  .Meilleures .mainWraper .product div:nth-child(5) {
+    display: none;
+  }
+
+  .Meilleures .mainWraper .product .rightarrow {
+    position: absolute;
+    right: 10px;
+    border: none;
+    top: 50%;
+    font-size: 18px;
+    background-color: transparent;
+  }
+  .Meilleures .mainWraper .product .leftarrow {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+  }
+
+  .Meilleures .mainWraper .product .div img {
+    width: 95%;
+    margin: auto;
+    display: block;
+  }
+  .Meilleures .mainWraper .product .div img:hover {
+    cursor: pointer;
+  }
+  .Meilleures .mainWraper .product .div {
+    width: 40%;
+    padding: 10px 0 30px 0;
+    box-shadow: 0 0 5px #975ba691;
+    transition: 0.7s;
+    background-color: white;
+  }
+  .Meilleures .mainWraper .product .div:hover {
+    width: 40%;
+    padding: 0;
+    box-shadow: 0 0 4px #975ba6;
+  }
+  .Meilleures .mainWraper .product .div p {
+    font-size: 14px;
+    padding: 10px;
+    color: #232323bd;
+    font-weight: 600;
+  }
+  .Meilleures .mainWraper .product .div div {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Meilleures .mainWraper .product .div div span {
+    color: #73b43e;
+    font-weight: 600;
+  }
+  .Meilleures .mainWraper .product .div div button {
+    color: white;
+    background-color: #73b43e;
+    border: none;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+  }
+
+  .Meilleures .mainWraper .tourBtn {
+    background-color: #f17236;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+  /* conseils */
+
+  .conseils .mainWraper .conseilsDiv {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+    margin: auto;
+  }
+  .conseils .mainWraper .conseilsDiv .single {
+    width: 40%;
+    height: fit-content;
+    transition: 3s;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainWraper {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+
+  .header {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    padding: 50px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1111;
+  }
+
+  .header .logoDiv {
+    width: 35%;
+  }
+  .header .searchDiv {
+    width: 0%;
+    margin-left: 15px;
+
+    position: relative;
+    visibility: hidden;
+  }
+  .header .contactDiv {
+    width: 40%;
+  }
+  .header .logoDiv a img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    margin: 50px 0 0 20px;
+  }
+  .header .logoDiv p {
+    opacity: 0;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.377);
+    font-weight: 600;
+  }
+
+  .searchDiv input {
+    padding: 17px 100px 17px 30px;
+    width: 0%;
+    font-size: 15px;
+    color: rgba(75, 74, 74, 0.63);
+
+    border: 3px solid #f17236;
+    outline: none;
+    border-radius: 0px;
+  }
+  .searchDiv i {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 17px;
+  }
+  .searchDiv input::placeholder {
+    color: rgba(75, 74, 74, 0.397);
+    font-size: 15px;
+  }
+
+  /* contactDiv  */
+  .contactDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 25px;
+    visibility: hidden;
+  }
+  .contactDiv div {
+    text-align: center;
+
+    /* width: 33%; */
+  }
+  .contactDiv div:first-child {
+    visibility: hidden;
+  }
+
+  .contactDiv div {
+    width: 0;
+  }
+  .contactDiv div i {
+    font-size: 25px;
+    color: #73b43e;
+    margin-bottom: 14px;
+    visibility: hidden;
+  }
+  .contactDiv .navbtn i {
+    visibility: visible;
+    font-size: 35px;
+    color: #000000;
+    margin-bottom: 14px;
+  }
+
+  .contactDiv div p {
+    color: #232323bd;
+
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /* navbar  */
+  .mainWraper .navbar {
+    visibility: hidden;
+    width: 100%;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+    background-color: #00000067;
+    z-index: 11111;
+  }
+  .mainWraper .navbar .menutitle {
+    visibility: hidden;
+    background-color: white;
+    width: 25%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mainWraper .navbar .menutitle button {
+    border: none;
+    color: black;
+    font-size: 18px;
+  }
+  .mainWraper .navbar ul {
+    width: 25%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    background-color: white;
+  }
+  .mainWraper .navbar ul li {
+    background: #73b43e;
+    width: auto;
+    height: auto;
+    padding: 0 12px;
+    line-height: 44px;
+    position: relative;
+  }
+  .mainWraper .navbar ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 4px;
+    padding: 10px;
+  }
+  .mainWraper .navbar ul li:first-child {
+    background: #f17236;
+    width: auto;
+    height: auto;
+    padding: 0 12px;
+    line-height: 44px;
+    border-radius: 0px 0 0 0px;
+  }
+  .mainWraper .navbar ul li:last-child {
+    background: #f17236;
+    width: auto;
+    height: auto;
+    padding: 0 12px;
+    line-height: 44px;
+    border-radius: 0 0px 0px 0;
+    margin-left: 0px;
+  }
+
+  .mainWraper .navbar ul li::before {
+    content: "";
+    position: absolute;
+    background-color: #f17236;
+    width: 0px;
+    height: 0px;
+    top: 11px;
+    left: 0;
+    border-radius: 5px;
+  }
+  .mainWraper .navbar ul li:last-child::before {
+    content: "";
+    position: absolute;
+    background-color: #f17236;
+    width: 0px;
+    height: 0px;
+    top: 11px;
+    left: 0;
+    border-radius: 5px;
+  }
+  .mainWraper .navbar ul li:first-child::before {
+    content: "";
+    position: absolute;
+    background-color: #f17236;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+    left: 0;
+    border-radius: 5px;
+  }
+
+  .mainWraper .navbar ul .blog1 {
+    overflow: hidden;
+    padding: 0 10px;
+  }
+  .mainWraper .navbar ul li:hover {
+    background: #f17236;
+  }
+  .mainWraper .navbar ul .blog1 div {
+    position: absolute;
+    transition: 0.1s;
+    top: -15px;
+    left: -47px;
+    width: 119px;
+    height: 82px;
+    transform: rotate(59deg);
+    background: #f17236;
+    visibility: hidden;
+  }
+
+  /* slider */
+  .slider div img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+  }
+
+  /* subnav  */
+
+  .subnav {
+    background-color: #73b43e;
+    padding: 10px;
+    color: white;
+    display: flex;
+    box-shadow: 0px 3px 8px rgba(66, 66, 68, 0.404);
+    overflow: hidden;
+  }
+
+  .subnav div {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 500;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    line-height: 22px;
+  }
+  .subnav div:nth-child(4) {
+    display: none;
+  }
+  .subnav div:nth-child(3) {
+    display: none;
+  }
+  .subnav div i {
+    font-size: 25px;
+  }
+  .subnav div p {
+    text-align: center;
+  }
+
+  /* sur  */
+
+  .sur .textSur h1 {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    padding: 15px 0;
+  }
+  .sur h1 span {
+    font-weight: 600;
+    text-align: center;
+    font-size: 22px;
+    margin: 0;
+    color: #975ba6;
+  }
+  .sur .textSur {
+    position: relative;
+  }
+  .sur .textSur .surBg {
+    height: 100%;
+    width: 100%;
+    background-image: url("./Image/montagne-nature.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 550px;
+    opacity: 0.14;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .sur .textSur .wraper {
+    max-width: 1320px;
+    margin: auto;
+  }
+  .sur .textSur .wraper div {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .sur .textSur .wraper div p {
+    font-size: 14px;
+    word-spacing: 8px;
+    line-height: 33px;
+    width: 100%;
+    text-align: start;
+  }
+  .sur .textSur .wraper .number {
+    color: #975ba6;
+    font-size: 14px;
+    text-align: start;
+    padding: 10px 0;
+  }
+  .sur .textSur .wraper .text {
+    line-height: 30px;
+    font-size: 14px;
+    padding-top: 0px;
+    text-align: start;
+    padding: 5px;
+    margin-top: 20px;
+  }
+
+  .sur .textSur .wraper div p span {
+    color: #f17236;
+  }
+  .sur .textSur .wraper div p span:hover {
+    cursor: pointer;
+    color: #975ba6;
+  }
+
+  /* univers */
+  .mainWraper .univers {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .mainWraper h2 {
+    color: #73b43e;
+    font-size: 37px;
+    text-align: center;
+    padding: 40px 0 20px 0;
+  }
+  .mainWraper .univers div {
+    width: 100%;
+  }
+  .mainWraper .univers .topMargin {
+    margin-top: 0px;
+  }
+  .mainWraper .univers div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #73b43e;
+  }
+  /* Nouveautés */
+  .Nouveautés {
+    position: relative;
+    z-index: 1122;
+  }
+  .Nouveautés .productBg {
+    background-color: #89459b;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    height: 350px;
+    width: 100%;
+    z-index: 111%;
+  }
+
+  .Nouveautés .mainWraper .product {
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 40px; */
+    position: relative;
+  }
+  .Nouveautés .mainWraper .product div:nth-child(5) {
+    display: none;
+  }
+  .Nouveautés .mainWraper .product div:nth-child(4) {
+    display: none;
+  }
+  .Nouveautés .mainWraper .product div:nth-child(3) {
+    display: none;
+  }
+
+  .Nouveautés .mainWraper .product .rightarrow {
+    position: absolute;
+    right: 40px;
+    border: none;
+    top: 50%;
+    font-size: 18px;
+    background-color: transparent;
+  }
+  .Nouveautés .mainWraper .product .leftarrow {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+  }
+
+  .Nouveautés .mainWraper .product .div img {
+    width: 95%;
+    margin: auto;
+    display: block;
+  }
+  .Nouveautés .mainWraper .product .div img:hover {
+    cursor: pointer;
+  }
+  .Nouveautés .mainWraper .product .div {
+    width: 60%;
+    padding: 10px 0 30px 0;
+    box-shadow: 0 0 5px #975ba691;
+    transition: 0.7s;
+    background-color: white;
+  }
+  .Nouveautés .mainWraper .product .div:hover {
+    width: 60%;
+    padding: 0;
+    box-shadow: 0 0 4px #975ba6;
+  }
+  .Nouveautés .mainWraper .product .div p {
+    font-size: 14px;
+    padding: 10px;
+    color: #232323bd;
+    font-weight: 600;
+  }
+  .Nouveautés .mainWraper .product .div div {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Nouveautés .mainWraper .product .div div span {
+    color: #73b43e;
+    font-weight: 600;
+  }
+  .Nouveautés .mainWraper .product .div div button {
+    color: white;
+    background-color: #73b43e;
+    border: none;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+  }
+
+  .Nouveautés .productBg .tourBtn {
+    background-color: #f17236;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 260px;
+  }
+  /* Produits */
+  .Produits {
+    position: relative;
+    z-index: 1122%;
+    margin-top: 150px;
+  }
+  .productBg {
+    background-color: #89459b;
+    position: absolute;
+    top: 240px;
+    left: 0;
+    height: 350px;
+    width: 100%;
+    z-index: 111%;
+  }
+
+  .Produits .mainWraper .product {
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 40px; */
+    position: relative;
+  }
+  .Produits .mainWraper .product div:nth-child(4) {
+    display: none;
+  }
+  .Produits .mainWraper .product div:nth-child(3) {
+    display: none;
+  }
+  .Produits .mainWraper .product div:nth-child(5) {
+    display: none;
+  }
+  .Produits .mainWraper .product .rightarrow {
+    position: absolute;
+    right: 40px;
+    border: none;
+    top: 50%;
+    font-size: 18px;
+    background-color: transparent;
+  }
+  .Produits .mainWraper .product .leftarrow {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+  }
+
+  .Produits .mainWraper .product .div img {
+    width: 95%;
+    margin: auto;
+    display: block;
+  }
+  .Produits .mainWraper .product .div img:hover {
+    cursor: pointer;
+  }
+  .Produits .mainWraper .product .div {
+    width: 60%;
+    padding: 10px 0 30px 0;
+    box-shadow: 0 0 5px #975ba691;
+    transition: 0.7s;
+    background-color: white;
+  }
+  .Produits .mainWraper .product .div:hover {
+    width: 60%;
+    padding: 0;
+    box-shadow: 0 0 4px #975ba6;
+  }
+  .Produits .mainWraper .product .div p {
+    font-size: 14px;
+    padding: 10px;
+    color: #232323bd;
+    font-weight: 600;
+  }
+  .Produits .mainWraper .product .div div {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Produits .mainWraper .product .div div span {
+    color: #73b43e;
+    font-weight: 600;
+  }
+  .Produits .mainWraper .product .div div button {
+    color: white;
+    background-color: #73b43e;
+    border: none;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+  }
+
+  .Produits .mainWraper .tourBtn {
+    background-color: #f17236;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+  /* Meilleures */
+  .Meilleures {
+    position: relative;
+    z-index: 1122%;
+    margin-top: 150px;
+  }
+  .Meilleures .productBg {
+    background-color: #73b43e;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    height: 350px;
+    width: 100%;
+    z-index: 111%;
+  }
+
+  .Meilleures .mainWraper .product {
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 40px; */
+    position: relative;
+  }
+  .Meilleures .mainWraper .product div:nth-child(5) {
+    display: none;
+  }
+  .Meilleures .mainWraper .product div:nth-child(4) {
+    display: none;
+  }
+  .Meilleures .mainWraper .product div:nth-child(3) {
+    display: none;
+  }
+
+  .Meilleures .mainWraper .product .rightarrow {
+    position: absolute;
+    right: 40px;
+    border: none;
+    top: 50%;
+    font-size: 18px;
+    background-color: transparent;
+  }
+  .Meilleures .mainWraper .product .leftarrow {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+  }
+
+  .Meilleures .mainWraper .product .div img {
+    width: 95%;
+    margin: auto;
+    display: block;
+  }
+  .Meilleures .mainWraper .product .div img:hover {
+    cursor: pointer;
+  }
+  .Meilleures .mainWraper .product .div {
+    width: 60%;
+    padding: 10px 0 30px 0;
+    box-shadow: 0 0 5px #975ba691;
+    transition: 0.7s;
+    background-color: white;
+  }
+  .Meilleures .mainWraper .product .div:hover {
+    width: 60%;
+    padding: 0;
+    box-shadow: 0 0 4px #975ba6;
+  }
+  .Meilleures .mainWraper .product .div p {
+    font-size: 14px;
+    padding: 10px;
+    color: #232323bd;
+    font-weight: 600;
+  }
+  .Meilleures .mainWraper .product .div div {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Meilleures .mainWraper .product .div div span {
+    color: #73b43e;
+    font-weight: 600;
+  }
+  .Meilleures .mainWraper .product .div div button {
+    color: white;
+    background-color: #73b43e;
+    border: none;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+  }
+
+  .Meilleures .mainWraper .tourBtn {
+    background-color: #f17236;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  /* conseils */
+
+  .conseils .mainWraper .conseilsDiv {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+    margin: auto;
+  }
+  .conseils .mainWraper .conseilsDiv .single {
+    width: 90%;
+    height: fit-content;
+    transition: 3s;
+  }
+}
