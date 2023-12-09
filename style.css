@@ -23,6 +23,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 0px 0;
+  z-index: 1500 !important;
 }
 
 .header .logoDiv {
@@ -201,10 +202,43 @@ a {
 }
 
 /* slider */
-.slider div img {
+.slider .mobileBanner img {
   width: 100%;
   height: 400px;
   object-fit: cover;
+  position: relative;
+  display: none;
+}
+.slider .destopBanner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  position: relative;
+}
+
+.slider .rightarrow {
+  position: absolute;
+  right: 40px;
+  border: none;
+  top: 400px;
+  font-size: 18px;
+  background-color: transparent;
+  z-index: 1000;
+}
+.slider .rightarrow:hover {
+  cursor: pointer;
+}
+.slider .leftarrow {
+  position: absolute;
+  left: 40px;
+  border: none;
+  top: 400px;
+  font-size: 18px;
+  background-color: transparent;
+  z-index: 1000;
+}
+.slider .leftarrow:hover {
+  cursor: pointer;
 }
 
 /* subnav  */
@@ -331,7 +365,7 @@ a {
 /* Nouveautés */
 .Nouveautés {
   position: relative;
-  z-index: 1122%;
+  z-index: 111;
 }
 .Nouveautés .productBg {
   background-color: #89459b;
@@ -340,7 +374,6 @@ a {
   left: 0;
   height: 350px;
   width: 100%;
-  z-index: 111%;
 }
 
 .Nouveautés .mainWraper .product {
@@ -429,7 +462,7 @@ a {
 /* Produits */
 .Produits {
   position: relative;
-  z-index: 1122%;
+  z-index: 112;
   margin-top: 150px;
 }
 .productBg {
@@ -533,13 +566,16 @@ a {
 .Meilleures .productBg {
   background-color: #73b43e;
   position: absolute;
-  top: 42px;
+  top: 100px;
   left: 0;
   height: 350px;
   width: 100%;
   z-index: 111%;
 }
 
+.Meilleures .mainWraper h2 {
+  margin-bottom: 120px;
+}
 .Meilleures .mainWraper .product {
   position: absolute;
   margin-top: 20px;
@@ -738,6 +774,123 @@ a {
 }
 .conseils .mainWraper button:hover {
   background-color: #98b580;
+}
+
+/* banner   */
+.banner {
+  background-color: #f1f1f1;
+  padding: 50px 0;
+  width: 100%;
+}
+.banner .mainWraper div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.banner .mainWraper div img {
+  width: 45%;
+}
+
+/* nos  */
+.nos {
+  background-color: white;
+  padding: 30px 0;
+  position: relative;
+}
+.nos .mainWraper h4 {
+  text-align: center;
+  padding: 20px;
+  color: #73b43e;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.nos .mainWraper div {
+  display: flex;
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+}
+.nos .mainWraper div img {
+  width: 260px;
+  height: 115px;
+  object-fit: cover;
+}
+.nos .mainWraper .tourBtn {
+  background-color: #73b43e;
+  color: white;
+  padding: 10px 20px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 40px auto;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nos .mainWraper .right {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+  border: 1px solid rgba(155, 152, 152, 0.856);
+  background: transparent;
+  color: rgba(155, 152, 152, 0.856);
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+.nos .mainWraper .left {
+  position: absolute;
+  top: 80px;
+  right: 85px;
+  border: 1px solid rgba(155, 152, 152, 0.856);
+  background: transparent;
+  color: rgba(155, 152, 152, 0.856);
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+/* .beaute */
+.beaute img {
+  width: 100%;
+}
+.beaute .beauteDiv {
+  display: flex;
+}
+.beaute .beauteDiv .imgdiv {
+  width: 50%;
+}
+.beaute .beauteDiv div h4 {
+  font-size: 44px;
+  font-weight: 500;
+}
+.beaute .beauteDiv div p {
+  font-size: 25px;
+  margin: 40px 0;
+  color: rgb(104, 100, 100);
+}
+.beaute .beauteDiv div {
+  width: 50%;
+}
+.beaute .beauteDiv div button {
+  background-color: #73b43e;
+  color: white;
+  padding: 10px 30px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.beaute .beauteDiv div img {
+  width: 280px;
+  height: 280px;
+  margin-left: 40%;
+  object-fit: cover;
 }
 
 @media (max-width: 1115px) {
@@ -961,10 +1114,43 @@ a {
   }
 
   /* slider */
-  .slider div img {
+  .slider .mobileBanner img {
     width: 100%;
-    height: 280px;
+    height: 400px;
     object-fit: cover;
+    position: relative;
+    display: none;
+  }
+  .slider .destopBanner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .slider .rightarrow {
+    position: absolute;
+    right: 40px;
+    border: none;
+    top: 250px;
+    font-size: 18px;
+    background-color: transparent;
+    z-index: 1000;
+  }
+  .slider .rightarrow:hover {
+    cursor: pointer;
+  }
+  .slider .leftarrow {
+    position: absolute;
+    left: 40px;
+    border: none;
+    top: 250px;
+    font-size: 18px;
+    background-color: transparent;
+    z-index: 1000;
+  }
+  .slider .leftarrow:hover {
+    cursor: pointer;
   }
 
   /* subnav  */
@@ -1284,7 +1470,7 @@ a {
   .Meilleures .productBg {
     background-color: #73b43e;
     position: absolute;
-    top: 42px;
+    top: 100px;
     left: 0;
     height: 350px;
     width: 100%;
@@ -1395,6 +1581,101 @@ a {
     height: fit-content;
     transition: 3s;
   }
+  /* banner   */
+  .banner {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 100%;
+  }
+  .banner .mainWraper div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .banner .mainWraper div img {
+    width: 50%;
+  }
+  /* nos  */
+  .nos {
+    background-color: white;
+    padding: 30px 0;
+  }
+  .nos .mainWraper h4 {
+    text-align: center;
+    padding: 20px;
+    color: #73b43e;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+
+  .nos .mainWraper div {
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+  }
+  .nos .mainWraper div img {
+    width: 260px;
+    height: 115px;
+    object-fit: cover;
+  }
+  .nos .mainWraper button {
+    background-color: #73b43e;
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 40px auto;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  /* .beaute */
+  .beaute img {
+    width: 100%;
+  }
+  .beaute .beauteDiv {
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+  .beaute .beauteDiv .imgdiv {
+    width: 50%;
+  }
+  .beaute .beauteDiv div h4 {
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .beaute .beauteDiv div p {
+    font-size: 18px;
+    margin: 40px 0;
+    color: rgb(104, 100, 100);
+  }
+  .beaute .beauteDiv div {
+    width: 50%;
+  }
+  .beaute .beauteDiv div button {
+    background-color: #73b43e;
+    color: white;
+    padding: 10px 30px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .beaute .beauteDiv div img {
+    width: 200px;
+    height: 200px;
+    margin-left: 40%;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1416,6 +1697,7 @@ a {
     left: 0;
     background-color: white;
     z-index: 1111;
+    width: 100%;
   }
 
   .header .logoDiv {
@@ -1631,10 +1913,58 @@ a {
   }
 
   /* slider */
-  .slider div img {
+  .slider .mobileBanner img {
     width: 100%;
-    height: 800px;
+    height: 100vh;
     object-fit: cover;
+    position: relative;
+    display: block;
+  }
+  .slider .destopBanner img {
+    display: none;
+  }
+
+  .slider .rightarrow {
+    position: absolute;
+    right: 10px;
+    border: none;
+    top: 50%;
+    font-size: 18px;
+    background-color: transparent;
+    z-index: 1000;
+    background-color: #73b43e;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .slider .rightarrow:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    background-color: white;
+    color: #73b43e;
+    border: 1px solid #73b43e;
+  }
+  .slider .leftarrow {
+    position: absolute;
+    left: 10px;
+    border: none;
+    top: 50%;
+    font-size: 18px;
+    background-color: transparent;
+    z-index: 1000;
+    background-color: #73b43e;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .slider .leftarrow:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    background-color: white;
+    color: #73b43e;
+    border: 1px solid #73b43e;
   }
 
   /* subnav  */
@@ -1990,10 +2320,13 @@ a {
     z-index: 1122%;
     margin-top: 150px;
   }
+  .Meilleures .mainWraper h2 {
+    margin-bottom: 20px;
+  }
   .Meilleures .productBg {
     background-color: #73b43e;
     position: absolute;
-    top: 42px;
+    top: 80px;
     left: 0;
     height: 350px;
     width: 100%;
@@ -2105,5 +2438,68 @@ a {
     width: 90%;
     height: fit-content;
     transition: 3s;
+  }
+  /* banner   */
+  .banner {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .banner .mainWraper div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .banner .mainWraper div img {
+    width: 100%;
+  }
+  /* .beaute */
+  .beaute img {
+    width: 100%;
+  }
+  .beaute .beauteDiv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+  }
+  .beaute .beauteDiv .imgdiv {
+    width: 100%;
+  }
+  .beaute .beauteDiv div h4 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .beaute .beauteDiv div p {
+    text-align: center;
+    font-size: 16px;
+    margin: 40px 0;
+    color: rgb(104, 100, 100);
+  }
+  .beaute .beauteDiv div {
+    width: 100%;
+  }
+  .beaute .beauteDiv div button {
+    background-color: #73b43e;
+    color: white;
+    padding: 10px 30px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    display: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .beaute .beauteDiv div img {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: block;
+    object-fit: cover;
   }
 }
