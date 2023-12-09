@@ -1092,6 +1092,94 @@ a {
   color: #f17236;
   font-weight: bold;
 }
+.footer .mainWrapers .body div h4 i {
+  display: none;
+}
+.footer .mainWrapers .bottom {
+  display: flex;
+  gap: 10px;
+}
+.footer .mainWrapers .bottom .div1 {
+  width: 30%;
+}
+.footer .mainWrapers .bottom .div1 p {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+}
+.footer .mainWrapers .bottom .div1 div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .mainWrapers .bottom .div1 div button {
+  background-color: #f17236;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+}
+.footer .mainWrapers .bottom .div1 div a {
+  color: white;
+  font-size: 24px;
+}
+.footer .mainWrapers .bottom .div2 {
+  width: 33%;
+}
+.footer .mainWrapers .bottom .div2 p {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+}
+.footer .mainWrapers .bottom .div2 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+}
+.footer .mainWrapers .bottom .div2 div img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.footer .mainWrapers .bottom .div3 {
+  width: 30%;
+}
+.footer .mainWrapers .bottom .div3 p {
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.footer .mainWrapers .bottom .div3 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .mainWrapers .bottom .div3 div input {
+  width: 60%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+}
+.footer .mainWrapers .bottom .div3 div button {
+  background-color: #73b43e;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  height: 35px;
+  border-radius: 0 5px 5px 0;
+  font-size: 20px;
+  padding: 0 10px;
+  border: none;
+}
 
 @media (max-width: 1115px) {
   .mainWraper {
@@ -1965,6 +2053,94 @@ a {
     flex-direction: column;
     align-items: start;
     gap: 5px;
+  }
+
+  .footer .mainWrapers .bottom {
+    display: flex;
+    gap: 10px;
+  }
+  .footer .mainWrapers .bottom .div1 {
+    width: 30%;
+  }
+  .footer .mainWrapers .bottom .div1 p {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .footer .mainWrapers .bottom .div1 div {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer .mainWrapers .bottom .div1 div button {
+    background-color: #f17236;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+  }
+  .footer .mainWrapers .bottom .div1 div a {
+    color: white;
+    font-size: 24px;
+  }
+  .footer .mainWrapers .bottom .div2 {
+    width: 33%;
+  }
+  .footer .mainWrapers .bottom .div2 p {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .footer .mainWrapers .bottom .div2 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+  }
+  .footer .mainWrapers .bottom .div2 div img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .footer .mainWrapers .bottom .div3 {
+    width: 30%;
+  }
+  .footer .mainWrapers .bottom .div3 p {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .footer .mainWrapers .bottom .div3 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .mainWrapers .bottom .div3 div input {
+    width: 60%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+  }
+  .footer .mainWrapers .bottom .div3 div button {
+    background-color: #73b43e;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    height: 35px;
+    border-radius: 0 5px 5px 0;
+    font-size: 20px;
+    padding: 0 10px;
+    border: none;
   }
 }
 
@@ -2936,5 +3112,97 @@ a {
     justify-content: space-between;
     font-size: 16px;
     color: #f17236;
+  }
+  .footer .mainWrapers .body div h4 i {
+    display: block;
+  }
+
+  .footer .mainWrapers .bottom {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  .footer .mainWrapers .bottom .div1 {
+    width: 100%;
+  }
+  .footer .mainWrapers .bottom .div1 p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .footer .mainWrapers .bottom .div1 div {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .footer .mainWrapers .bottom .div1 div button {
+    background-color: #f17236;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+  }
+  .footer .mainWrapers .bottom .div1 div a {
+    color: white;
+    font-size: 18px;
+  }
+  .footer .mainWrapers .bottom .div2 {
+    width: 100%;
+  }
+  .footer .mainWrapers .bottom .div2 p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .footer .mainWrapers .bottom .div2 div {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+
+    gap: 10px;
+  }
+  .footer .mainWrapers .bottom .div2 div img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .footer .mainWrapers .bottom .div3 {
+    width: 100%;
+  }
+  .footer .mainWrapers .bottom .div3 p {
+    font-size: 18px;
+    text-align: start;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .footer .mainWrapers .bottom .div3 div {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .footer .mainWrapers .bottom .div3 div input {
+    width: 60%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+  }
+  .footer .mainWrapers .bottom .div3 div button {
+    background-color: #73b43e;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    height: 35px;
+    border-radius: 0 5px 5px 0;
+    font-size: 20px;
+    padding: 0 10px;
+    border: none;
   }
 }
