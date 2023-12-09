@@ -961,6 +961,8 @@ a {
 }
 .bepliat .mainWraper .div div div img {
   width: 285px;
+  box-shadow: none;
+
   height: 228px;
   object-fit: cover;
 }
@@ -1026,6 +1028,7 @@ a {
 .footer {
   background-color: #414141;
   padding: 80px 10px;
+  margin-bottom: 10px;
 }
 .footer .mainWrapers .top {
   display: flex;
@@ -1045,6 +1048,49 @@ a {
   width: 280px;
   object-fit: cover;
   height: 45px;
+}
+.footer .mainWrapers .body {
+  margin: 60px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer .mainWrapers .body div {
+  width: 25%;
+}
+.footer .mainWrapers .body .line {
+  width: 30px;
+  height: 2px;
+  margin: 15px 0;
+  background-color: white;
+}
+.footer .mainWrapers .body div h4 {
+  font-size: 16px;
+  color: white;
+}
+.footer .mainWrapers .body a {
+  font-size: 14px;
+  color: white;
+  display: block;
+  margin: 10px 0;
+}
+.footer .mainWrapers .body div img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+.footer .mainWrapers .body div .ad {
+  font-size: 14px;
+  color: white;
+  width: 100%;
+}
+.footer .mainWrapers .body div a:hover {
+  color: #975ba6;
+}
+.footer .mainWrapers .body div p {
+  color: #f17236;
+  font-weight: bold;
 }
 
 @media (max-width: 1115px) {
@@ -1902,9 +1948,10 @@ a {
     border-radius: 50%;
   }
   /* * footer  */
-  */ .footer {
+  .footer {
     background-color: #414141;
     padding: 80px 10px;
+    margin-bottom: 0px;
   }
   .footer .mainWrapers .top {
     display: flex;
@@ -2821,9 +2868,10 @@ a {
     border-radius: 50%;
   }
   /* * footer */
-  */ .footer {
+  .footer {
     background-color: #414141;
-    padding: 80px px;
+    padding: 80px 0px;
+    margin-bottom: 100px;
   }
   .footer .mainWrapers .top {
     display: flex;
@@ -2862,5 +2910,31 @@ a {
     justify-content: space-around;
 
     padding: 18px 0;
+  }
+
+  .footer .mainWrapers .body {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer .mainWrapers .body div {
+    width: 100%;
+  }
+
+  .footer .mainWrapers .body .line {
+    display: none;
+    width: 30px;
+    height: 2px;
+    margin: 15px 0;
+    background-color: white;
+  }
+  .footer .mainWrapers .body div h4 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #f17236;
   }
 }
