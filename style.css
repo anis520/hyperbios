@@ -102,6 +102,9 @@ a {
   text-align: center;
   /* width: 33%; */
 }
+.contactDiv .navbtn i:hover {
+  color: #89459b;
+}
 .contactDiv .navbtn i {
   visibility: hidden;
   font-size: 25px;
@@ -277,11 +280,14 @@ a {
   box-shadow: 0px 3px 8px rgba(66, 66, 68, 0.404);
 }
 
+.subnav div p {
+  text-align: center;
+}
 .subnav div {
   display: flex;
   font-size: 18px;
   font-weight: 500;
-  width: 20%;
+  width: auto;
   align-items: center;
   justify-content: center;
   padding: 25px;
@@ -734,7 +740,7 @@ a {
   width: 100%;
   border: 1px solid rgba(204, 198, 198, 0.404);
   background-color: white;
-  padding: 20px;
+  padding: 10px;
 }
 .conseils .mainWraper .conseilsDiv .single .contain .title {
   font-size: 16px;
@@ -1095,7 +1101,7 @@ a {
   font-size: 14px;
   color: white;
   display: block;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 .footer .mainWrapers .body div img {
   height: 45px;
@@ -1113,6 +1119,7 @@ a {
 .footer .mainWrapers .body div p {
   color: #f17236;
   font-weight: bold;
+  cursor: pointer;
 }
 .footer .mainWrapers .body div h4 i {
   display: none;
