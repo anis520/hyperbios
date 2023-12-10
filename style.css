@@ -1544,16 +1544,17 @@ a {
     max-width: 1320px;
     margin: auto;
   }
-  .sur .textSur .wraper div {
+  .sur .textSur .wraper .main {
     display: flex;
-    gap: 20px;
+    gap: 40px;
   }
-  .sur .textSur .wraper div p {
-    font-size: 14px;
-    word-spacing: 8px;
+  .sur .textSur .wraper .main div {
+    font-size: 18px;
     line-height: 33px;
     width: 50%;
-    text-align: start;
+    text-align: justify;
+    font-weight: bold;
+    color: #000000c2;
   }
   .sur .textSur .wraper .number {
     color: #975ba6;
@@ -1570,14 +1571,10 @@ a {
     margin-top: 20px;
   }
 
-  .sur .textSur .wraper div p span {
+  .sur .textSur .wraper .main div a {
     color: #f17236;
   }
-  .sur .textSur .wraper div p a {
-    color: #f17236;
-    cursor: pointer;
-  }
-  .sur .textSur .wraper div p span:hover {
+  .sur .textSur .wraper .main div a:hover {
     cursor: pointer;
     color: #975ba6;
   }
@@ -2558,37 +2555,38 @@ a {
     max-width: 1320px;
     margin: auto;
   }
-  .sur .textSur .wraper div {
+  .sur .textSur .wraper .main {
     display: flex;
+    gap: 40px;
     flex-direction: column;
-    gap: 14px;
   }
-  .sur .textSur .wraper div p {
-    font-size: 14px;
-    word-spacing: 8px;
+  .sur .textSur .wraper .main div {
+    font-size: 18px;
     line-height: 33px;
-    width: 100%;
-    text-align: start;
+    width: 95%;
+    text-align: justify;
+    font-weight: bold;
+    color: #000000c2;
   }
   .sur .textSur .wraper .number {
     color: #975ba6;
-    font-size: 14px;
-    text-align: start;
-    padding: 10px 0;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 0;
   }
   .sur .textSur .wraper .text {
     line-height: 30px;
-    font-size: 14px;
-    padding-top: 0px;
-    text-align: start;
+    font-size: 18px;
+    padding-top: 30px;
+    text-align: center;
     padding: 5px;
     margin-top: 20px;
   }
 
-  .sur .textSur .wraper div p span {
+  .sur .textSur .wraper .main div a {
     color: #f17236;
   }
-  .sur .textSur .wraper div p span:hover {
+  .sur .textSur .wraper .main div a:hover {
     cursor: pointer;
     color: #975ba6;
   }
