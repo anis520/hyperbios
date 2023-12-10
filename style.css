@@ -328,16 +328,17 @@ a {
   max-width: 1320px;
   margin: auto;
 }
-.sur .textSur .wraper div {
+.sur .textSur .wraper .main {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
-.sur .textSur .wraper div p {
+.sur .textSur .wraper .main div {
   font-size: 18px;
-  word-spacing: 8px;
   line-height: 33px;
   width: 50%;
-  text-align: start;
+  text-align: justify;
+  font-weight: bold;
+  color: #000000c2;
 }
 .sur .textSur .wraper .number {
   color: #975ba6;
@@ -354,10 +355,10 @@ a {
   margin-top: 20px;
 }
 
-.sur .textSur .wraper div p a {
+.sur .textSur .wraper .main div a {
   color: #f17236;
 }
-.sur .textSur .wraper div p a:hover {
+.sur .textSur .wraper .main div a:hover {
   cursor: pointer;
   color: #975ba6;
 }
