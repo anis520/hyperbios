@@ -313,7 +313,6 @@ a {
   height: 100%;
   width: 100%;
 
-  background-image: url("./Image/montagne-nature.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1527,7 +1526,6 @@ a {
   .sur .textSur {
     height: 100%;
     width: 100%;
-    background-image: url("./Image/montagne-nature.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -2522,6 +2520,7 @@ a {
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
     font-size: 22px;
     padding: 15px 0;
   }
@@ -2532,19 +2531,14 @@ a {
     margin: 0;
     color: #975ba6;
   }
+
   .sur .textSur {
-    position: relative;
-  }
-  .sur .textSur .surBg {
     height: 100%;
     width: 100%;
-    background-image: url("./Image/montagne-nature.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-bottom: 550px;
-    opacity: 0.14;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
   }
