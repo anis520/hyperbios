@@ -243,24 +243,28 @@ a {
   right: 40px;
   border: none;
   top: 400px;
-  font-size: 18px;
+  font-size: 22px;
   background-color: transparent;
+  color: rgb(212, 206, 206);
   z-index: 1000;
 }
 .slider .rightarrow:hover {
   cursor: pointer;
+  color: white;
 }
 .slider .leftarrow {
   position: absolute;
   left: 40px;
   border: none;
+  color: rgb(212, 206, 206);
   top: 400px;
-  font-size: 18px;
+  font-size: 22px;
   background-color: transparent;
   z-index: 1000;
 }
 .slider .leftarrow:hover {
   cursor: pointer;
+  color: white;
 }
 
 /* subnav  */
@@ -350,10 +354,10 @@ a {
   margin-top: 20px;
 }
 
-.sur .textSur .wraper div p span {
+.sur .textSur .wraper div p a {
   color: #f17236;
 }
-.sur .textSur .wraper div p span:hover {
+.sur .textSur .wraper div p a:hover {
   cursor: pointer;
   color: #975ba6;
 }
@@ -864,6 +868,11 @@ a {
   padding: 5px 10px;
   border-radius: 2px;
 }
+.nos .mainWraper .right:hover {
+  border: 1px solid rgba(0, 0, 0, 0.651);
+  color: #000000b0;
+}
+
 .nos .mainWraper .left {
   position: absolute;
   top: 80px;
@@ -874,7 +883,10 @@ a {
   padding: 5px 10px;
   border-radius: 2px;
 }
-
+.nos .mainWraper .left:hover {
+  border: 1px solid rgba(0, 0, 0, 0.651);
+  color: #000000b0;
+}
 /* .beaute */
 .beaute img {
   width: 100%;
@@ -1044,6 +1056,15 @@ a {
   font-size: 18px;
   color: white;
 }
+.footer .mainWrapers .top div:nth-child(2) p {
+  margin-left: 10px;
+}
+.footer .mainWrapers .top div:nth-child(2) img {
+  width: 420px;
+  border-radius: 10px;
+  height: 50px;
+  margin-left: 10px;
+}
 .footer .mainWrapers .top div img {
   width: 280px;
   object-fit: cover;
@@ -1076,8 +1097,8 @@ a {
   margin: 10px 0;
 }
 .footer .mainWrapers .body div img {
-  height: 40px;
-  width: 40px;
+  height: 45px;
+  width: 60px;
   object-fit: cover;
 }
 .footer .mainWrapers .body div .ad {
@@ -1166,15 +1187,21 @@ a {
   width: 60%;
   background-color: white;
   padding: 10px;
+  height: 45px;
   border-radius: 5px 0 0 5px;
   border: none;
+  outline: none;
+  text-align: center;
+}
+.footer .mainWrapers .bottom .div1 div a:hover {
+  color: #89459b;
 }
 .footer .mainWrapers .bottom .div3 div button {
   background-color: #73b43e;
   color: white;
   padding: 5px;
   border-radius: 5px;
-  height: 35px;
+  height: 45px;
   border-radius: 0 5px 5px 0;
   font-size: 20px;
   padding: 0 10px;
@@ -1420,6 +1447,8 @@ a {
     position: absolute;
     right: 40px;
     border: none;
+    color: rgb(212, 206, 206);
+
     top: 250px;
     font-size: 18px;
     background-color: transparent;
@@ -1427,10 +1456,13 @@ a {
   }
   .slider .rightarrow:hover {
     cursor: pointer;
+    color: white;
   }
   .slider .leftarrow {
     position: absolute;
     left: 40px;
+    color: rgb(212, 206, 206);
+
     border: none;
     top: 250px;
     font-size: 18px;
@@ -1439,6 +1471,7 @@ a {
   }
   .slider .leftarrow:hover {
     cursor: pointer;
+    color: white;
   }
 
   /* subnav  */
@@ -1538,6 +1571,10 @@ a {
 
   .sur .textSur .wraper div p span {
     color: #f17236;
+  }
+  .sur .textSur .wraper div p a {
+    color: #f17236;
+    cursor: pointer;
   }
   .sur .textSur .wraper div p span:hover {
     cursor: pointer;
@@ -2054,7 +2091,15 @@ a {
     align-items: start;
     gap: 5px;
   }
-
+  .footer .mainWrapers .top div:nth-child(2) p {
+    margin-left: 0px;
+  }
+  .footer .mainWrapers .top div:nth-child(2) img {
+    width: 420px;
+    border-radius: 10px;
+    height: 50px;
+    margin-left: 0px;
+  }
   .footer .mainWrapers .bottom {
     display: flex;
     gap: 10px;
@@ -2106,7 +2151,7 @@ a {
   }
   .footer .mainWrapers .bottom .div2 div img {
     height: 60px;
-    width: 60px;
+    width: 80px;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -2136,11 +2181,13 @@ a {
     color: white;
     padding: 5px;
     border-radius: 5px;
-    height: 35px;
+    height: 45px;
     border-radius: 0 5px 5px 0;
     font-size: 20px;
     padding: 0 10px;
     border: none;
+    width: 60px;
+    text-align: center;
   }
 }
 
@@ -2163,6 +2210,7 @@ a {
     left: 0;
     background-color: white;
     z-index: 1111;
+    width: 100%;
   }
 
   .header .logoDiv {
@@ -3199,10 +3247,12 @@ a {
     color: white;
     padding: 5px;
     border-radius: 5px;
-    height: 35px;
+    height: 45px;
     border-radius: 0 5px 5px 0;
     font-size: 20px;
     padding: 0 10px;
     border: none;
+    width: 60px;
+    text-align: center;
   }
 }
