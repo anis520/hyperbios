@@ -299,6 +299,7 @@ a {
   text-align: center;
   font-size: 40px;
   padding: 15px 0;
+  background-color: rgba(255, 255, 255, 0.801);
 }
 .sur h1 span {
   font-weight: 600;
@@ -307,25 +308,25 @@ a {
   margin: 10px 0 20px 0;
   color: #975ba6;
 }
+
 .sur .textSur {
-  position: relative;
-}
-.sur .textSur .surBg {
   height: 100%;
   width: 100%;
+
   background-image: url("./Image/montagne-nature.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-bottom: 550px;
-  opacity: 0.14;
-  position: absolute;
+
+  position: relative;
   top: 0;
   left: 0;
 }
 
 .sur .textSur .wraper {
-  max-width: 1320px;
+  background-color: rgba(255, 255, 255, 0.801);
+  max-width: 1350px;
+  padding: 0 20px;
   margin: auto;
 }
 .sur .textSur .wraper .main {
@@ -1507,13 +1508,12 @@ a {
 
   /* sur  */
 
-  .sur .textSur {
-    padding: 30px;
-  }
   .sur .textSur h1 {
     font-weight: 600;
     text-align: center;
     font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.801);
+
     padding: 15px 0;
   }
   .sur h1 span {
@@ -1523,26 +1523,24 @@ a {
     margin: 10px 0 20px 0;
     color: #975ba6;
   }
+
   .sur .textSur {
-    position: relative;
-  }
-  .sur .textSur .surBg {
     height: 100%;
     width: 100%;
     background-image: url("./Image/montagne-nature.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-bottom: 550px;
-    opacity: 0.14;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
   }
 
   .sur .textSur .wraper {
-    max-width: 1320px;
+    max-width: 1350px;
+    padding: 0 20px;
     margin: auto;
+    background-color: rgba(255, 255, 255, 0.801);
   }
   .sur .textSur .wraper .main {
     display: flex;
