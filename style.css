@@ -3020,7 +3020,7 @@ a {
     cursor: pointer;
   }
   .beaute .beauteDiv div img {
-    width: 370px;
+    width: 350px;
     height: 370px;
     margin: auto;
     display: block;
@@ -3041,6 +3041,7 @@ a {
   }
   .bepliat .mainWraper .div {
     display: flex;
+
     flex-direction: column;
     align-items: end;
     justify-content: space-between;
@@ -3070,11 +3071,14 @@ a {
   }
   .bepliat .mainWraper .div div div {
     display: flex;
+    flex-direction: column;
     margin-top: 50px;
   }
   .bepliat .mainWraper .div div div img {
-    width: 200px;
-    height: 200px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 180px;
     object-fit: cover;
   }
   /* //depliant */
