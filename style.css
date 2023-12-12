@@ -1136,7 +1136,7 @@ a {
   width: 30%;
 }
 .footer .mainWrapers .bottom .div1 p {
-  font-size: 22px;
+  font-size: 19px;
   color: white;
   margin-bottom: 20px;
 }
@@ -1164,7 +1164,7 @@ a {
   width: 33%;
 }
 .footer .mainWrapers .bottom .div2 p {
-  font-size: 22px;
+  font-size: 19px;
   color: white;
   margin-bottom: 20px;
 }
@@ -1182,10 +1182,11 @@ a {
   border-radius: 10px;
 }
 .footer .mainWrapers .bottom .div3 {
-  width: 30%;
+  width: 22%;
+  margin-left: auto;
 }
 .footer .mainWrapers .bottom .div3 p {
-  font-size: 22px;
+  font-size: 19px;
   text-align: center;
   color: white;
   margin-bottom: 20px;
