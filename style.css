@@ -3123,6 +3123,11 @@ a {
     font-size: 18px;
     color: white;
   }
+  .footer .mainWrapers .top div:nth-child(2) img {
+    width: 300px;
+    object-fit: cover;
+    height: 45px;
+  }
   .footer .mainWrapers .top div img {
     width: 280px;
     object-fit: cover;
