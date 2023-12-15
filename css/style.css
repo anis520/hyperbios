@@ -1,0 +1,261 @@
+/*
+  Theme Name:  HTML Template 
+  Author:  
+  Support:  
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme Default CSS
+2. Header-Style
+3. Banner-Style
+3. Fotter-Style
+4. Submenu-Style
+
+*/
+
+/*--------------------------------------------------------------------------------------------------
+                                      1. Theme Default CSS
+---------------------------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+:root {
+  --text1: #73b43e;
+  --text2: #975ba6;
+  --text3: #f17236;
+}
+
+/*----------------------------------------------------------------------------------------------------
+                                      2. Header Style
+-----------------------------------------------------------------------------------------------------*/
+.header {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/*====== Header-Top ======*/
+.header .header-top {
+  display: flex;
+}
+.header .header-top .logo {
+  width: 338px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header .header-top .logo img {
+  width: 203px;
+  height: 80px;
+  margin-left: 63px;
+}
+.header .header-top .logo .title {
+  color: rgba(0, 0, 0, 0.59);
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 13px;
+  text-align: center;
+}
+.header .header-top .search {
+  position: relative;
+}
+.header .header-top .search i {
+  position: absolute;
+  top: 52px;
+  right: 22px;
+}
+.header .header-top .search input {
+  width: 384px;
+  padding: 0 120px 0 20px;
+  height: 57px;
+  border: 2px solid #f17236;
+  outline: none;
+  border-radius: 6px;
+  margin-top: 28px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(192, 190, 190, 0.199);
+}
+.header .header-top .contact {
+  width: 407px;
+  padding: 0 50px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.header .header-top .contact div {
+  text-align: center;
+  padding: 10px;
+}
+
+.header .header-top .contact div p {
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.header .header-top .contact div i {
+  margin-bottom: 14px;
+  font-size: 25px;
+  color: var(--text1);
+  transition: 0.3s;
+}
+.header .header-top .contact .cart i {
+  margin-bottom: 0;
+}
+.header .header-top .contact div i:hover {
+  cursor: pointer;
+  color: var(--text2);
+}
+.header .header-top .contact .cal i:hover {
+  transform: scale(1.1);
+}
+.header .header-top .contact .cal p:hover {
+  cursor: pointer;
+}
+.header .header-top .contact .user:hover p {
+  cursor: pointer;
+  color: var(--text1);
+}
+/*====== Header-bottom ======*/
+.header-bottom {
+  margin-top: 22px;
+}
+.header-bottom ul {
+  display: flex;
+}
+
+.header-bottom ul li {
+  background-color: var(--text1);
+  width: 159px;
+  padding: 13px;
+  color: white;
+  font-size: 14px;
+
+  border-right: 2px solid rgba(255, 255, 255, 0.123);
+  font-weight: 700;
+  transition: 0.1s;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.header-bottom ul li:hover {
+  background-color: var(--text3);
+  cursor: pointer;
+  border-radius: 0px;
+}
+.header-bottom ul li:nth-child(2) {
+  position: relative;
+  overflow: hidden;
+}
+.header-bottom ul li:nth-child(2) div {
+  position: absolute;
+  width: 140px;
+  height: 50px;
+  background-color: var(--text3);
+  top: 0;
+  left: -75px;
+  transform: rotate(242deg);
+}
+.header-bottom ul li:first-child {
+  width: 225px;
+  border-radius: 5px 0 0 5px;
+  border-right: 0;
+
+  background-color: var(--text3);
+  display: block;
+}
+.header-bottom ul li:last-child {
+  background-color: var(--text3);
+  border-radius: 0 5px 5px 0;
+  width: 90px;
+  margin-left: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------
+                                      3. Banner-Style
+---------------------------------------------------------------------------------------------------*/
+.banner {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: top center;
+
+  position: relative;
+}
+
+/*====== buttons ======*/
+.banner button {
+  border: none;
+  background-color: transparent;
+  color: rgb(216, 213, 213);
+  font-size: 22px;
+  transition: 0.3s;
+}
+.banner button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.banner .left {
+  position: absolute;
+  top: 48%;
+  left: 2%;
+}
+.banner .right {
+  position: absolute;
+  top: 48%;
+  right: 2%;
+}
+/*--------------------------------------------------------------------------------------------------
+                                      6. Submenu-Style
+---------------------------------------------------------------------------------------------------*/
+.submenu {
+  height: 120px;
+  width: 100%;
+  background-color: var(--text1);
+  box-shadow: 1px 4px 13px #877d7d;
+  display: flex;
+}
+.submenu div {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+.submenu div p {
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.submenu div i {
+  color: white;
+  font-size: 1.7rem;
+}
+/*--------------------------------------------------------------------------------------------------
+                                      5. Fotter-Style
+---------------------------------------------------------------------------------------------------*/
