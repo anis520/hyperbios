@@ -45,18 +45,21 @@ a {
   align-items: center;
   justify-content: center;
   padding: 0px 0;
+  margin: 0 16px;
   z-index: 1500 !important;
 }
 
 .header .logoDiv {
-  width: 28%;
+  width: 26%;
+  margin-left: 15px;
 }
 .header .searchDiv {
-  width: 35%;
+  width: 36%;
   position: relative;
+  margin: 0 0 0 50px;
 }
 .header .contactDiv {
-  width: 37%;
+  width: 36%;
 }
 .header .logoDiv a img {
   display: block;
@@ -66,12 +69,12 @@ a {
   text-align: center;
   margin-top: 18px;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.377);
+  color: #696969;
   font-weight: 600;
 }
 
 .searchDiv input {
-  padding: 17px 100px 17px 30px;
+  padding: 17px 90px 17px 20px;
   width: 100%;
   font-size: 15px;
   color: rgba(75, 74, 74, 0.63);
@@ -95,7 +98,7 @@ a {
 .contactDiv {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   gap: 30px;
 }
 .contactDiv div {
@@ -123,14 +126,11 @@ a {
   font-size: 14px;
   font-weight: 600;
 }
-.contactDiv div .number {
-  /* letter-spacing: 5px; */
-}
 
 /* navbar  */
 .mainWraper .navbar {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 0;
 }
 .mainWraper .navbar .menutitle {
   visibility: hidden;
@@ -163,16 +163,20 @@ a {
   background: #f17236;
   width: 290px;
   height: 100%;
-  padding: 0 12px;
   line-height: 44px;
   border-radius: 7px 0 0 7px;
+}
+.mainWraper .navbar ul li:first-child:hover {
+  border-radius: 0;
+}
+.mainWraper .navbar ul li:last-child:hover {
+  border-radius: 0;
 }
 .mainWraper .navbar ul li:last-child {
   background: #f17236;
   width: 150px;
   height: 100%;
-  padding: 0 12px;
-  line-height: 44px;
+  padding: 0 2px;
   border-radius: 0 7px 7px 0;
   margin-left: 10px;
 }
@@ -277,7 +281,7 @@ a {
 
 .subnav {
   background-color: #73b43e;
-  padding: 10px;
+  padding: 5px;
   color: white;
   display: flex;
   box-shadow: 0px 3px 8px rgba(66, 66, 68, 0.404);
@@ -288,13 +292,13 @@ a {
 }
 .subnav div {
   display: flex;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   width: auto;
   align-items: center;
   justify-content: center;
   padding: 25px;
-  gap: 25px;
+  gap: 15px;
 }
 
 .subnav div i {
@@ -334,7 +338,7 @@ a {
 .sur .textSur .wraper {
   background-color: rgba(255, 255, 255, 0.801);
   max-width: 1350px;
-  padding: 0 20px;
+  padding: 0 10px;
   margin: auto;
 }
 .sur .textSur .wraper .main {
@@ -350,7 +354,7 @@ a {
   font-weight: 600;
 }
 .sur .textSur .wraper .number {
-  color: #975ba6;
+  color: #89459b;
   font-size: 25px;
   text-align: center;
   padding: 20px 0;
@@ -611,7 +615,7 @@ a {
 }
 
 .Meilleures .mainWraper h2 {
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 .Meilleures .mainWraper .product {
   position: absolute;
@@ -1053,6 +1057,9 @@ a {
   padding: 80px 10px;
   margin-bottom: 10px;
 }
+.footer .mainWrapers {
+  max-width: 1290px;
+}
 .footer .mainWrapers .top {
   display: flex;
   justify-content: space-between;
@@ -1138,6 +1145,7 @@ a {
 .footer .mainWrapers .bottom .div1 p {
   font-size: 19px;
   color: white;
+  text-align: end;
   margin-bottom: 20px;
 }
 .footer .mainWrapers .bottom .div1 div {
@@ -1165,6 +1173,7 @@ a {
 }
 .footer .mainWrapers .bottom .div2 p {
   font-size: 19px;
+  text-align: center;
   color: white;
   margin-bottom: 20px;
 }
@@ -1175,11 +1184,25 @@ a {
 
   gap: 10px;
 }
-.footer .mainWrapers .bottom .div2 div img {
+
+.footer .mainWrapers .bottom .div2 div i {
   height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
-  object-fit: cover;
-  border-radius: 10px;
+  font-size: 25px;
+  color: white;
+  border-radius: 2px;
+}
+.footer .mainWrapers .bottom .div2 div .fac {
+  background-color: #3b5792;
+}
+.footer .mainWrapers .bottom .div2 div .in {
+  background-color: #282828;
+}
+.footer .mainWrapers .bottom .div2 div .you {
+  background-color: #cd201f;
 }
 .footer .mainWrapers .bottom .div3 {
   width: 22%;
@@ -1188,6 +1211,7 @@ a {
 .footer .mainWrapers .bottom .div3 p {
   font-size: 19px;
   text-align: center;
+
   color: white;
   margin-bottom: 20px;
 }
@@ -1451,7 +1475,7 @@ a {
   }
   .slider .destopBanner img {
     width: 100%;
-    height: 410px;
+    height: 174px;
     object-fit: cover;
     position: relative;
   }
@@ -1462,7 +1486,7 @@ a {
     border: none;
     color: rgb(212, 206, 206);
 
-    top: 250px;
+    top: 180px;
     font-size: 18px;
     background-color: transparent;
     z-index: 1000;
@@ -1477,7 +1501,7 @@ a {
     color: rgb(212, 206, 206);
 
     border: none;
-    top: 250px;
+    top: 180px;
     font-size: 18px;
     background-color: transparent;
     z-index: 1000;
@@ -1558,7 +1582,7 @@ a {
     gap: 40px;
   }
   .sur .textSur .wraper .main div {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 33px;
     width: 50%;
     text-align: justify;
@@ -1567,14 +1591,14 @@ a {
     color: #000000c2;
   }
   .sur .textSur .wraper .number {
-    color: #975ba6;
+    color: #89459b;
     font-size: 25px;
     text-align: center;
     padding: 20px 0;
   }
   .sur .textSur .wraper .text {
     line-height: 30px;
-    font-size: 18px;
+    font-size: 15px;
     padding-top: 30px;
     text-align: center;
     padding: 5px;
@@ -2197,8 +2221,16 @@ a {
     width: 60px;
     text-align: center;
   }
+  .footer .mainWrapers .bottom div p {
+    text-align: start;
+  }
 }
 
+@media (max-width: 967px) {
+  .contactDiv .navbtn i {
+    margin-left: 40px;
+  }
+}
 @media (max-width: 767px) {
   .mainWraper {
     max-width: 1130px;
@@ -2219,6 +2251,7 @@ a {
     background-color: white;
     z-index: 1111;
     width: 100%;
+    margin-left: 0;
   }
 
   .header .logoDiv {
@@ -2281,7 +2314,7 @@ a {
   }
   .contactDiv div {
     text-align: center;
-
+    margin-left: 5%;
     /* width: 33%; */
   }
   .contactDiv div:first-child {
@@ -3272,5 +3305,11 @@ a {
     border: none;
     width: 60px;
     text-align: center;
+  }
+  .footer .mainWrapers .bottom .div2 p {
+    text-align: start;
+  }
+  .footer .mainWrapers .bottom .div1 p {
+    text-align: start;
   }
 }
