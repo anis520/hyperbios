@@ -50,18 +50,18 @@ body {
   --text3: #f17236;
 }
 
-.cart {
+.carts {
   width: 214px;
   height: 362px;
   box-shadow: 1px 2px 5px rgb(219, 190, 219);
   transition: 0.5s;
   overflow: hidden;
 }
-.cart:hover {
+.carts:hover {
   height: 358px;
 }
 
-.cart img {
+.carts img {
   height: 205px;
   width: 187px;
   object-fit: cover;
@@ -69,28 +69,28 @@ body {
   transition: 0.5s;
   margin-bottom: 15px;
 }
-.cart:hover img {
+.carts:hover img {
   margin-top: 10px;
 }
 
-.cart a {
+.carts a {
   color: #414141;
   margin: 15px;
   font-size: 0.8rem;
   text-align: center;
   font-weight: 600;
 }
-.cart .bottom {
+.carts .bottom {
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
-.cart .bottom p {
+.carts .bottom p {
   font-size: 17px;
   font-weight: 700;
   color: #98b853;
 }
-.cart .bottom button {
+.carts .bottom button {
   font-size: 17px;
   font-weight: 700;
   background-color: #73b43e;
