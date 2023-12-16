@@ -1010,3 +1010,102 @@ a:nth-child(4) {
 .fotter .main .fotterBody div ul .last {
   color: white;
 }
+.fotter .main .fotterBottom {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.fotter .main .fotterBottom .single1 p {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: white;
+}
+.fotter .main .fotterBottom .single1 div button {
+  background-color: #f17236;
+  color: white;
+  font-size: 18px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.fotter .main .fotterBottom .single1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.fotter .main .fotterBottom .single1 div a {
+  color: white;
+
+  font-size: 24px;
+}
+.fotter .main .fotterBottom .single1 div a:hover {
+  color: var(--text2);
+}
+.fotter .main .fotterBottom .single2 {
+  width: 30%;
+}
+.fotter .main .fotterBottom .single2 p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+.fotter .main .fotterBottom .single2 div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.facebook {
+  background-color: #3b5793;
+  padding: 10px 20px;
+  font-size: 24px;
+  color: white;
+}
+.intragrams {
+  background-color: #292929;
+  padding: 10px 18px;
+  font-size: 24px;
+  color: white;
+}
+.youtube {
+  background-color: #cd201f;
+  padding: 10px 18px;
+  font-size: 24px;
+  color: white;
+}
+.fotter .main .fotterBottom .single3 {
+  width: 30%;
+}
+.fotter .main .fotterBottom .single3 p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+
+.fotter .main .fotterBottom .single3 div {
+  display: flex;
+  justify-content: center;
+}
+.fotter .main .fotterBottom .single3 div input {
+  padding: 14px 8px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: rgba(68, 64, 64, 0.377);
+  outline: none;
+  font-weight: 600;
+}
+.fotter .main .fotterBottom .single3 div button {
+  background-color: #73b43e;
+  color: white;
+  padding: 10px 18px;
+  font-size: 25px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
