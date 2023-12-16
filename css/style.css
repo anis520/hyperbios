@@ -15,6 +15,7 @@
 4. submenu-Style
 5. heroText-Style
 6. univers-Style
+7. nouveaute-Style
 
 */
 
@@ -49,6 +50,86 @@ body {
   --text3: #f17236;
 }
 
+.cart {
+  width: 214px;
+  height: 362px;
+  box-shadow: 1px 2px 5px rgb(219, 190, 219);
+  transition: 0.5s;
+  overflow: hidden;
+}
+.cart:hover {
+  height: 358px;
+}
+
+.cart img {
+  height: 205px;
+  width: 187px;
+  object-fit: cover;
+  margin-top: 18px;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+.cart:hover img {
+  margin-top: 10px;
+}
+
+.cart a {
+  color: #414141;
+  margin: 15px;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 600;
+}
+.cart .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.cart .bottom p {
+  font-size: 17px;
+  font-weight: 700;
+  color: #98b853;
+}
+.cart .bottom button {
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #73b43e;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.cartWrapper {
+  width: 1053px;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.cartWrapper button {
+  border: none;
+  background-color: transparent;
+  color: #000000c5;
+  font-size: 22px;
+}
+.cartWrapper button:hover {
+  cursor: pointer;
+  color: #000;
+}
+.cartWrapper .left {
+  position: absolute;
+  top: 48%;
+  left: -4%;
+}
+.cartWrapper .right {
+  position: absolute;
+  top: 48%;
+  right: -4%;
+}
 /*----------------------------------------------------------------------------------------------------
                                       2. header Style
 -----------------------------------------------------------------------------------------------------*/
@@ -218,7 +299,8 @@ body {
 }
 .banner button:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.2);
+  color: white;
 }
 .banner .left {
   position: absolute;
@@ -326,15 +408,45 @@ body {
   line-height: 12px;
 }
 /*--------------------------------------------------------------------------------------------------
-                                      5. fotter-Style
+                                      5. univers-Style
 ---------------------------------------------------------------------------------------------------*/
 
 .univers {
+  background-color: #ffffff;
 }
 .univers h2 {
-  color: var(--text1);
+  color: #73b43e;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.univers .main {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.univers .main a:nth-child(2),
+a:nth-child(4) {
+  margin-top: 25px;
+}
+.univers .main img {
+  width: 265px;
+  height: 200px;
+  border: 2px solid #61ce70;
 }
 
 /*--------------------------------------------------------------------------------------------------
-                                      5. univers-Style
+                                      5. nouveaute-Style
 ---------------------------------------------------------------------------------------------------*/
+.nouveaute {
+}
+.nouveaute h2 {
+  color: #73b43e;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
