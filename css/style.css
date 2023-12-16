@@ -14,6 +14,7 @@
 3. fotter-Style
 4. submenu-Style
 5. heroText-Style
+6. univers-Style
 
 */
 
@@ -24,6 +25,7 @@
 html,
 body {
   height: 100%;
+  background-color: #ffffff;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -271,7 +273,7 @@ body {
 }
 .heroText .blob {
   padding: 15px 10px;
-  background-color: rgba(240, 248, 255, 0.849);
+  background-color: rgba(255, 255, 255, 0.733);
 }
 .heroText .blob .main h2 {
   font-size: 40px;
@@ -320,8 +322,19 @@ body {
   font-size: 24px;
   color: #9745ac;
   margin-top: 30px;
+  margin-bottom: 15px;
   line-height: 12px;
 }
 /*--------------------------------------------------------------------------------------------------
                                       5. fotter-Style
+---------------------------------------------------------------------------------------------------*/
+
+.univers {
+}
+.univers h2 {
+  color: var(--text1);
+}
+
+/*--------------------------------------------------------------------------------------------------
+                                      5. univers-Style
 ---------------------------------------------------------------------------------------------------*/
