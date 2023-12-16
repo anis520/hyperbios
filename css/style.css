@@ -22,6 +22,7 @@
 11. marques-Style
 12. femme-Style
 13. depliant-Style
+14. livraison-Style
 
 */
 
@@ -342,7 +343,7 @@ body {
   right: 2%;
 }
 /*--------------------------------------------------------------------------------------------------
-                                      6. submenu-Style
+                                      4. submenu-Style
 ---------------------------------------------------------------------------------------------------*/
 .submenu {
   height: 120px;
@@ -437,7 +438,7 @@ body {
   line-height: 12px;
 }
 /*--------------------------------------------------------------------------------------------------
-                                      5. univers-Style
+                                      6. univers-Style
 ---------------------------------------------------------------------------------------------------*/
 
 .univers {
@@ -468,7 +469,7 @@ a:nth-child(4) {
 }
 
 /*--------------------------------------------------------------------------------------------------
-                                      5. nouveaute-Style
+                                      7. nouveaute-Style
 ---------------------------------------------------------------------------------------------------*/
 .nouveaute {
 }
@@ -505,7 +506,7 @@ a:nth-child(4) {
 }
 
 /*--------------------------------------------------------------------------------------------------
-                                      5. produits-Style
+                                      8. produits-Style
 ---------------------------------------------------------------------------------------------------*/
 .produits {
 }
@@ -531,7 +532,7 @@ a:nth-child(4) {
 }
 
 /*--------------------------------------------------------------------------------------------------
-                                      5. meilleures-Style
+                                      9. meilleures-Style
 ---------------------------------------------------------------------------------------------------*/
 .meilleures {
 }
@@ -567,7 +568,7 @@ a:nth-child(4) {
   cursor: pointer;
 }
 /*--------------------------------------------------------------------------------------------------
-                                      5. conseils-Style
+                                      10. conseils-Style
 ---------------------------------------------------------------------------------------------------*/
 
 .conseils {
@@ -684,7 +685,7 @@ a:nth-child(4) {
 }
 
 /*--------------------------------------------------------------------------------------------------
-                                      5. gallary-Style
+                                      11. gallary-Style
 ---------------------------------------------------------------------------------------------------*/
 .gallary {
   width: 1240px;
@@ -702,7 +703,7 @@ a:nth-child(4) {
   object-fit: cover;
 }
 /*--------------------------------------------------------------------------------------------------
-                                      5.marques-Style
+                                      12.marques-Style
 ---------------------------------------------------------------------------------------------------*/
 .marques {
   background-color: white;
@@ -762,7 +763,7 @@ a:nth-child(4) {
   cursor: pointer;
 }
 /*--------------------------------------------------------------------------------------------------
-                                      5.femme-Style
+                                      13.femme-Style
 ---------------------------------------------------------------------------------------------------*/
 .femme {
   background-color: white;
@@ -868,10 +869,67 @@ a:nth-child(4) {
   width: 286px;
   height: 227px;
   box-shadow: none;
+  object-fit: cover;
 }
 
 .depliant .main .side .sideFotter .promo {
   width: 240px;
   height: 240px;
   box-shadow: none;
+  object-fit: cover;
+}
+/*--------------------------------------------------------------------------------------------------
+                                      14.livraison-Style
+---------------------------------------------------------------------------------------------------*/
+.livraison {
+  background-color: white;
+  padding: 80px 0 20px;
+}
+
+.livraison .main {
+  width: 1180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.livraison .main div {
+  position: relative;
+  width: 280px;
+  padding: 10px;
+}
+.livraison .main div a {
+  font-size: 20px;
+  color: white;
+
+  text-align: center;
+  display: block;
+  padding: 60px 0 10px;
+}
+.livraison .main div p {
+  font-size: 14px;
+  color: white;
+
+  text-align: center;
+  padding-bottom: 10px;
+}
+.livraison .main div img {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  top: -5px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.livraison .main .single1 {
+  background-color: #975ba6;
+}
+.livraison .main .single2 {
+  background-color: #73b43e;
+}
+.livraison .main .single3 {
+  background-color: #414141;
+}
+.livraison .main .single4 {
+  background-color: #f17236;
 }
