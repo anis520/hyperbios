@@ -16,6 +16,7 @@
 5. heroText-Style
 6. univers-Style
 7. nouveaute-Style
+8. meilleures-Style
 
 */
 
@@ -507,4 +508,40 @@ a:nth-child(4) {
   padding: 10px 25px;
   border-radius: 2px;
   margin-top: 25px;
+}
+
+/*--------------------------------------------------------------------------------------------------
+                                      5. meilleures-Style
+---------------------------------------------------------------------------------------------------*/
+.meilleures {
+}
+.meilleures h2 {
+  color: #8945a9;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.meilleures .blob {
+  background-color: #73b43e;
+
+  position: relative;
+}
+
+.meilleures .blob .cartWrapper {
+  position: relative;
+  bottom: -50px;
+}
+.meilleures .blob .button {
+  display: block;
+  background-color: var(--text3);
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -140px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
