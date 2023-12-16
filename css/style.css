@@ -21,6 +21,7 @@
 10. gallary-Style
 11. marques-Style
 12. femme-Style
+13. depliant-Style
 
 */
 
@@ -806,4 +807,71 @@ a:nth-child(4) {
   height: 325px;
   object-fit: cover;
   margin-left: 320px;
+}
+/*--------------------------------------------------------------------------------------------------
+                                      13.depliant-Style
+---------------------------------------------------------------------------------------------------*/
+.depliant {
+  background-color: white;
+}
+.depliant .main {
+  width: 1140px;
+  margin: auto;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.depliant h2 {
+  color: #f17236;
+  text-align: center;
+
+  margin-bottom: 70px;
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+.depliant .main img {
+  width: 480px;
+  height: auto;
+  box-shadow: 0px 0px 5px gray;
+}
+.depliant .main .side {
+  margin-left: 100px;
+  width: 628px;
+}
+.depliant .main .side h2 {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.3em;
+  color: #0e0d0d;
+  margin-bottom: 0;
+}
+.depliant .main .side button {
+  background-color: #73b43e;
+  color: white;
+  border: none;
+  display: block;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 2px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.depliant .main .side .sideFotter {
+  display: flex;
+  margin-top: 90px;
+}
+
+.depliant .main .side .sideFotter .dest {
+  margin-left: 40px;
+  width: 286px;
+  height: 227px;
+  box-shadow: none;
+}
+
+.depliant .main .side .sideFotter .promo {
+  width: 240px;
+  height: 240px;
+  box-shadow: none;
 }
