@@ -945,16 +945,14 @@ a:nth-child(4) {
   width: 1280px;
   margin: auto;
 
-  display: flex;
   justify-content: space-between;
 }
 
 .fotter .main .fotterTop {
-  margin-top: 60px;
   width: 100%;
   display: flex;
   gap: 80px;
-  padding-bottom: 80px;
+  padding: 60px 0;
 }
 .fotter .main .fotterTop div {
   /* width: 50%; */
@@ -976,4 +974,39 @@ a:nth-child(4) {
   width: 370px;
   height: 50px;
   object-fit: cover;
+}
+.fotter .main .fotterBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fotter .main .fotterBody div .blob {
+  width: 30px;
+  height: 2px;
+  margin: 15px 0;
+  background-color: white;
+}
+.fotter .main .fotterBody div p {
+  color: white;
+}
+
+.fotter .main .fotterBody div ul li a {
+  color: white;
+  font-size: 14px;
+}
+.fotter .main .fotterBody div ul li:hover a {
+  color: var(--text2);
+}
+.fotter .main .fotterBody div ul .mark {
+  color: var(--text3);
+  display: block;
+  font-weight: 500;
+}
+.fotter .main .fotterBody div ul a img {
+  width: 60px;
+  height: 45px;
+  display: block;
+}
+.fotter .main .fotterBody div ul .last {
+  color: white;
 }
