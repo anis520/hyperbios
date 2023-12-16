@@ -579,9 +579,12 @@ a:nth-child(4) {
 .conseils .main {
   width: 1100px;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 .conseils .main .single {
   width: 347px;
+  height: fit-content;
   overflow: hidden;
   border: 1px solid gainsboro;
 }
@@ -629,4 +632,32 @@ a:nth-child(4) {
   font-size: 15px;
   color: #777777;
   margin: 0 20px 20px 20px;
+}
+.conseils .main .single .fotter {
+  height: 53px;
+  background-color: #98b853;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+}
+
+.conseils .main .single .fotter a {
+  width: 140px;
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.5s;
+}
+.conseils .main .single .fotter a:hover {
+  background-color: #0785a0;
+  cursor: pointer;
+}
+.conseils .main .single .fotter p {
+  margin-left: auto;
+  margin-right: 10px;
 }
