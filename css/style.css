@@ -20,6 +20,7 @@
 9. conseils-Style
 10. gallary-Style
 11. marques-Style
+12. femme-Style
 
 */
 
@@ -758,4 +759,51 @@ a:nth-child(4) {
   border-radius: 2px;
   margin-top: 25px;
   cursor: pointer;
+}
+/*--------------------------------------------------------------------------------------------------
+                                      5.femme-Style
+---------------------------------------------------------------------------------------------------*/
+.femme {
+  background-color: white;
+}
+
+.femme .banner {
+  width: 100%;
+  height: auto;
+}
+.femme .main {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.femme .main .left h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.femme .main .left p {
+  color: #525252;
+  margin: 20px 0;
+  font-size: 25px;
+}
+.femme .main .left p {
+  color: #525252;
+  margin: 20px 0;
+  font-size: 25px;
+}
+.femme .main .left button {
+  background-color: #73b43e;
+  color: white;
+  border: none;
+
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 2px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.femme .main .right img {
+  width: 305px;
+  height: 325px;
+  object-fit: cover;
+  margin-left: 320px;
 }
