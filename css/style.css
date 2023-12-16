@@ -23,6 +23,7 @@
 12. femme-Style
 13. depliant-Style
 14. livraison-Style
+15. fotter-Style
 
 */
 
@@ -818,7 +819,7 @@ a:nth-child(4) {
 .depliant .main {
   width: 1140px;
   margin: auto;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -895,7 +896,7 @@ a:nth-child(4) {
 .livraison .main div {
   position: relative;
   width: 280px;
-  padding: 10px;
+  padding: 0 10px;
 }
 .livraison .main div a {
   font-size: 20px;
@@ -903,7 +904,7 @@ a:nth-child(4) {
 
   text-align: center;
   display: block;
-  padding: 60px 0 10px;
+  padding: 30px 0 10px;
 }
 .livraison .main div p {
   font-size: 14px;
@@ -912,7 +913,7 @@ a:nth-child(4) {
   text-align: center;
   padding-bottom: 10px;
 }
-.livraison .main div img {
+.livraison .main div a img {
   width: 130px;
   height: 130px;
   position: absolute;
@@ -932,4 +933,47 @@ a:nth-child(4) {
 }
 .livraison .main .single4 {
   background-color: #f17236;
+}
+/*--------------------------------------------------------------------------------------------------
+                                      15.fotter-Style
+---------------------------------------------------------------------------------------------------*/
+.fotter {
+  background-color: #414141;
+}
+
+.fotter .main {
+  width: 1280px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.fotter .main .fotterTop {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  gap: 80px;
+  padding-bottom: 80px;
+}
+.fotter .main .fotterTop div {
+  /* width: 50%; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fotter .main .fotterTop div .title {
+  font-size: 18px;
+  color: white;
+}
+.fotter .main .fotterTop .left img {
+  width: 295px;
+  height: 45px;
+  object-fit: cover;
+}
+.fotter .main .fotterTop .right img {
+  width: 370px;
+  height: 50px;
+  object-fit: cover;
 }
