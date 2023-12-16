@@ -19,6 +19,7 @@
 8. meilleures-Style
 9. conseils-Style
 10. gallary-Style
+11. marques-Style
 
 */
 
@@ -697,4 +698,64 @@ a:nth-child(4) {
   width: 527px;
   height: 250px;
   object-fit: cover;
+}
+/*--------------------------------------------------------------------------------------------------
+                                      5.marques-Style
+---------------------------------------------------------------------------------------------------*/
+.marques {
+  background-color: white;
+  padding-bottom: 30px;
+}
+.marques h2 {
+  color: var(--text1);
+  text-align: center;
+
+  margin-bottom: 70px;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.marques .main {
+  width: 1140px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  position: relative;
+}
+.marques .main img {
+  width: 283px;
+  height: 111px;
+  object-fit: cover;
+}
+.marques .main .left {
+  position: absolute;
+  top: 10px;
+  right: 28px;
+  padding: 0 4px;
+  background-color: white;
+  color: rgb(165, 162, 162);
+  border: 1px solid gainsboro;
+  font-size: 22px;
+}
+.marques .main .right {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  padding: 0 4px;
+  background-color: white;
+  color: rgb(165, 162, 162);
+  border: 1px solid gainsboro;
+  font-size: 22px;
+}
+
+.marques button {
+  display: block;
+  background-color: var(--text1);
+  color: white;
+  border: none;
+  margin: auto;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 2px;
+  margin-top: 25px;
+  cursor: pointer;
 }
