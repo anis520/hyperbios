@@ -9,10 +9,11 @@
 /* CSS Index
 -----------------------------------
 1. Theme Default CSS
-2. Header-Style
-3. Banner-Style
-3. Fotter-Style
-4. Submenu-Style
+2. header-Style
+3. banner-Style
+3. fotter-Style
+4. submenu-Style
+5. heroText-Style
 
 */
 
@@ -47,7 +48,7 @@ body {
 }
 
 /*----------------------------------------------------------------------------------------------------
-                                      2. Header Style
+                                      2. header Style
 -----------------------------------------------------------------------------------------------------*/
 .header {
   width: 1140px;
@@ -194,7 +195,7 @@ body {
 }
 
 /*--------------------------------------------------------------------------------------------------
-                                      3. Banner-Style
+                                      3. banner-Style
 ---------------------------------------------------------------------------------------------------*/
 .banner {
   width: 100%;
@@ -228,13 +229,14 @@ body {
   right: 2%;
 }
 /*--------------------------------------------------------------------------------------------------
-                                      6. Submenu-Style
+                                      6. submenu-Style
 ---------------------------------------------------------------------------------------------------*/
 .submenu {
   height: 120px;
   width: 100%;
   background-color: var(--text1);
-  box-shadow: 1px 4px 13px #877d7d;
+  box-shadow: -4px 7px 16px #877d7d;
+  margin-bottom: 7px;
   display: flex;
 }
 .submenu div {
@@ -257,5 +259,69 @@ body {
   font-size: 1.7rem;
 }
 /*--------------------------------------------------------------------------------------------------
-                                      5. Fotter-Style
+                                      5. heroText-Style
+---------------------------------------------------------------------------------------------------*/
+
+.heroText {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.heroText .blob {
+  padding: 15px 10px;
+  background-color: rgba(240, 248, 255, 0.849);
+}
+.heroText .blob .main h2 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+.heroText .blob .main h2 span {
+  font-weight: bold;
+  color: #975ba6;
+}
+.heroText .blob .main .text {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 32px;
+  display: flex;
+  text-align: justify;
+  gap: 40px;
+  margin-top: 24px;
+}
+
+.heroText .blob .main .text p {
+  width: 50%;
+  color: inherit !important;
+  font: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
+}
+.heroText .blob .main .text p a {
+  color: var(--text3);
+}
+.heroText .blob .main .text p a:hover {
+  color: var(--text2);
+}
+.heroText .blob .main .textfotter {
+  margin-top: 35px;
+
+  font-size: 17.6px;
+  font-weight: 600;
+  text-align: center;
+  color: #353434;
+  line-height: 35px;
+}
+.heroText .blob .main .textfotter span {
+  display: block;
+  font-size: 24px;
+  color: #9745ac;
+  margin-top: 30px;
+  line-height: 12px;
+}
+/*--------------------------------------------------------------------------------------------------
+                                      5. fotter-Style
 ---------------------------------------------------------------------------------------------------*/
