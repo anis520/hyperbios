@@ -977,6 +977,7 @@ a:nth-child(4) {
 }
 .fotter .main .fotterBody {
   display: flex;
+  margin-right: 40px;
   align-items: center;
   justify-content: space-between;
 }
@@ -988,6 +989,7 @@ a:nth-child(4) {
 }
 .fotter .main .fotterBody div p {
   color: white;
+  font-weight: 600;
 }
 
 .fotter .main .fotterBody div ul li a {
@@ -1072,7 +1074,7 @@ a:nth-child(4) {
 }
 .youtube {
   background-color: #cd201f;
-  padding: 10px 18px;
+  padding: 10px 15px;
   font-size: 24px;
   color: white;
 }
