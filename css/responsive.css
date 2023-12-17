@@ -2,16 +2,109 @@
                                Large Desktops :1200px.= xl
 ---------------------------------------------------------------------------------------------------*/
 @media (min-width: 1025px) and (max-width: 1120px) {
-  .header {
+  /*----------------------------------------------------------------------------------------------------
+                                      2. header Style
+-----------------------------------------------------------------------------------------------------*/
+  .headerWrapper {
     width: 100%;
+    background-color: #ffffff;
+    margin: auto;
+  }
+  .header {
+    width: 1140px;
     margin: 0 auto;
   }
-  .header .header-top .logo .title {
+  .wrapper {
+    width: 100%;
+  }
+
+  /*====== Header-Top ======*/
+  .header .header-top {
+    display: flex;
+  }
+  .header .header-top .logo {
+    width: 338px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header .header-top .logo img {
+    width: 203px;
+    height: 80px;
+    margin-left: 63px;
+  }
+
+  .header .header-top .search {
+    position: relative;
+  }
+  .header .header-top .search i {
+    position: absolute;
+    top: 52px;
+    right: 22px;
+  }
+  .header .header-top .search input {
+    width: 384px;
+    padding: 0 120px 0 20px;
+    height: 57px;
+    border: 2px solid #f17236;
+    outline: none;
+    border-radius: 6px;
+    margin-top: 28px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(61, 59, 59, 0.849);
+  }
+  .header .header-top .contact {
+    width: 30%px;
+    padding: 0 50px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .header .header-top .contact div {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .header .header-top .contact div:first-child {
     display: none;
   }
-  .header-bottom {
+  .header .header-top .contact div p {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  .header .header-top .contact div i {
+    margin-bottom: 14px;
+    font-size: 25px;
+    color: var(--text1);
+    transition: 0.3s;
+  }
+  .header .header-top .contact .cart i {
+    margin-bottom: 0;
+  }
+  .header .header-top .contact div i:hover {
+    cursor: pointer;
+    color: var(--text2);
+  }
+  .header .header-top .contact .cal i:hover {
+    transform: scale(1.1);
+  }
+  .header .header-top .contact .cal p:hover {
+    cursor: pointer;
+  }
+  .header .header-top .contact .user:hover p {
+    cursor: pointer;
+    color: var(--text1);
+  }
+  .header .header-top .title {
     display: none;
   }
+  .header .header-bottom {
+    display: none;
+  }
+
   /*--------------------------------------------------------------------------------------------------
                                       15.fotter-Style
 ---------------------------------------------------------------------------------------------------*/
@@ -1667,7 +1760,7 @@
     display: flex;
     gap: 30px;
     flex-direction: column;
-    padding: 30px;
+    padding: 10px;
   }
   .fotter .main .fotterTop div {
     align-items: start;
@@ -1809,7 +1902,7 @@
     border-bottom-left-radius: 5px;
     color: rgba(68, 64, 64, 0.377);
     outline: none;
-    width: 20%;
+    width: 80%;
     font-weight: 600;
   }
   .fotter .main .fotterBottom .single3 div button {
