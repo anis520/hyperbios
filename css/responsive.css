@@ -133,6 +133,9 @@
     width: 100%;
     padding: 0 20px;
   }
+  .fotter .main .fotterTop .right .tablet {
+    display: none;
+  }
   /*--------------------------------------------------------------------------------------------------
                                       14.livraison-Style
 ---------------------------------------------------------------------------------------------------*/
@@ -832,6 +835,12 @@
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+  }
+  .fotter .main .fotterTop .right .tablet {
+    display: block;
+  }
+  .fotter .main .fotterTop .right .pc {
+    display: none;
   }
 
   /*--------------------------------------------------------------------------------------------------
@@ -1918,11 +1927,39 @@
     margin-bottom: 15px;
     line-height: 12px;
   }
+  .fotterMobile {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0;
+    background-color: white;
+    color: #73b43e;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+  }
 }
 /*--------------------------------------------------------------------------------------------------
                                Medium Devices Tablets :768px.= md
 ---------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 0px) and (max-width: 540px) {
+  .fotterMobile {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0;
+    background-color: white;
+    color: #73b43e;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+  }
   /*----------------------------------------------------------------------------------------------------
                                       2. header Style
 -----------------------------------------------------------------------------------------------------*/
