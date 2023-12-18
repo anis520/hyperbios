@@ -232,20 +232,18 @@ body {
   color: var(--text1);
   transition: 0.3s;
 }
-.header .header-top .contact .cart i {
-  margin-bottom: 0;
-}
+
 .header .header-top .contact div i:hover {
   cursor: pointer;
   color: var(--text2);
 }
-.header .header-top .contact .cal i:hover {
+.header .header-top .contact div i:hover {
   transform: scale(1.1);
 }
-.header .header-top .contact .cal p:hover {
+.header .header-top .contact div p:hover {
   cursor: pointer;
 }
-.header .header-top .contact .user:hover p {
+.header .header-top .contact div p:hover {
   cursor: pointer;
   color: var(--text1);
 }
