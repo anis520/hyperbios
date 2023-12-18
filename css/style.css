@@ -249,6 +249,9 @@ body {
   cursor: pointer;
   color: var(--text1);
 }
+.header .header-top .contact .nav {
+  display: none;
+}
 /*====== Header-bottom ======*/
 .header-bottom {
   margin-top: 22px;
